@@ -1000,7 +1000,32 @@ p {
   padding: 34px;
 }
 
-.about-card img {
+.about-card--brand {
+  grid-template-columns: 220px 1fr;
+}
+
+.about-mark {
+  display: grid;
+  min-height: 220px;
+  place-items: center;
+  border: 1px solid var(--line-warm);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(251, 247, 238, 0.95), rgba(220, 232, 235, 0.8)),
+    var(--ivory);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+}
+
+.about-mark img {
+  width: min(132px, 62%);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid rgba(201, 168, 87, 0.45);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-card > img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -1322,6 +1347,14 @@ textarea {
     padding: 24px;
   }
 
+  .about-card--brand {
+    grid-template-columns: 1fr;
+  }
+
+  .about-mark {
+    min-height: 190px;
+  }
+
   .dossier-card > img {
     min-height: auto;
     max-height: 420px;
@@ -1333,7 +1366,7 @@ textarea {
     height: 520px;
   }
 
-  .about-card img {
+  .about-card > img {
     max-width: 260px;
     aspect-ratio: 1;
     margin: 0 auto;

@@ -12,7 +12,7 @@ Open `index.html` in a browser, or use `abrir-scriptorium.bat`.
 - `styles.css`: responsive institutional design
 - `translations.js`: multilingual content dictionary for 12 languages
 - `script.js`: mobile menu, language switcher, portfolio filters and quote message helper
-- `assets/`: founder portrait and portfolio visuals
+- `assets/`: brand, portfolio, infographic and dossier visuals
 - `portfolio/`: downloadable sample files
 
 ## Notes
