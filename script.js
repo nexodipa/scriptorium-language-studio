@@ -4,6 +4,7 @@ const filterButtons = document.querySelectorAll(".filter-button");
 const portfolioCards = document.querySelectorAll(".portfolio-card");
 const quoteForm = document.querySelector("#quote-form");
 const formNote = document.querySelector("#form-note");
+const whatsappRequestLink = document.querySelector("#whatsapp-request-link");
 const languageSelect = document.querySelector("#language-select");
 const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
@@ -172,6 +173,10 @@ quoteForm.addEventListener("submit", (event) => {
     ar: "طلب خدمة - Scriptorium"
   };
   const subject = subjectByLang[lang] || subjectByLang.en;
+  if (whatsappRequestLink) {
+    whatsappRequestLink.href = "https://wa.me/593987411592?text=" + encodeURIComponent(message);
+  }
+
   const mailto = "mailto:josuepug@gmail.com?subject=" +
     encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
   window.location.href = mailto;

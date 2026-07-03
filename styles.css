@@ -134,6 +134,7 @@ p {
 .site-nav,
 .hero-actions,
 .trust-row,
+.hero-contact-strip,
 .card-actions,
 .about-points,
 .contact-notes {
@@ -371,9 +372,21 @@ p {
 
 .hero-actions,
 .trust-row,
+.hero-contact-strip,
 .contact-notes {
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-contact-strip {
+  margin-top: 16px;
+}
+
+.hero-contact-strip a {
+  border-bottom: 1px solid rgba(71, 106, 120, 0.35);
+  color: var(--blue-deep);
+  font-size: 0.9rem;
+  font-weight: 900;
 }
 
 .trust-row {
@@ -396,6 +409,34 @@ p {
 .contact-section,
 .library-section {
   padding: 86px 7vw;
+}
+
+.quick-contact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border-block: 1px solid var(--line);
+  background: var(--line);
+}
+
+.quick-contact a {
+  display: grid;
+  gap: 4px;
+  padding: 22px 7vw;
+  background: #ffffff;
+}
+
+.quick-contact span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.quick-contact strong {
+  color: var(--blue-deep);
+  font-size: 1rem;
 }
 
 .section-heading {
@@ -508,7 +549,8 @@ p {
 .library-grid,
 .portfolio-grid,
 .ethics-grid,
-.pricing-grid {
+.pricing-grid,
+.faq-grid {
   display: grid;
   gap: 18px;
 }
@@ -516,7 +558,8 @@ p {
 .today-grid,
 .publication-grid,
 .article-preview-grid,
-.portfolio-grid {
+.portfolio-grid,
+.pricing-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -556,6 +599,8 @@ p {
 .article-preview-grid article,
 .library-grid article,
 .ethics-grid article,
+.pricing-grid article,
+.faq-grid details,
 .limits-panel > div,
 .about-card,
 .quote-form,
@@ -578,7 +623,9 @@ p {
 .sample-grid article,
 .article-preview-grid article,
 .library-grid article,
-.ethics-grid article {
+.ethics-grid article,
+.pricing-grid article,
+.faq-grid details {
   padding: 24px;
 }
 
@@ -639,6 +686,38 @@ p {
   font-size: 1.25rem;
 }
 
+.pricing-section,
+.faq-section {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(237, 243, 244, 0.82)),
+    var(--page);
+}
+
+.pricing-grid article {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  border-top: 4px solid var(--blue);
+}
+
+.pricing-grid span {
+  color: #8b6f2d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.pricing-grid h3,
+.pricing-grid p {
+  margin: 0;
+}
+
+.pricing-grid strong {
+  margin-top: 4px;
+  color: var(--blue-deep);
+  font-size: 0.9rem;
+}
+
 .hire-grid article {
   position: relative;
 }
@@ -660,6 +739,30 @@ p {
 
 .trust-grid h3 {
   font-size: 1.08rem;
+}
+
+.faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.faq-grid details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-grid summary {
+  cursor: pointer;
+  color: var(--blue-deep);
+  font-weight: 900;
+}
+
+.faq-grid p {
+  margin: 14px 0 0;
+  color: var(--muted);
 }
 
 .script-grid strong {
@@ -1167,6 +1270,17 @@ textarea {
   font-size: 0.86rem;
 }
 
+.form-actions-secondary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.form-actions-secondary .secondary-button {
+  justify-content: center;
+  text-align: center;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -1222,6 +1336,8 @@ textarea {
   .publication-grid,
   .article-preview-grid,
   .portfolio-grid,
+  .pricing-grid,
+  .faq-grid,
   .contract-grid,
   .hire-grid,
   .trust-grid,
@@ -1236,6 +1352,7 @@ textarea {
   .mission-section,
   .ancient-section,
   .contact-section,
+  .quick-contact,
   .portfolio-head,
   .contract-template {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1321,6 +1438,8 @@ textarea {
   .publication-grid,
   .article-preview-grid,
   .portfolio-grid,
+  .pricing-grid,
+  .faq-grid,
   .contract-grid,
   .hire-grid,
   .trust-grid,
@@ -1335,10 +1454,12 @@ textarea {
   .mission-section,
   .ancient-section,
   .contact-section,
+  .quick-contact,
   .portfolio-head,
   .contract-template,
   .limits-panel,
   .form-row,
+  .form-actions-secondary,
   .about-card {
     grid-template-columns: 1fr;
   }
