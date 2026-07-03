@@ -114,6 +114,8 @@ quoteForm.addEventListener("submit", (event) => {
 
   const data = new FormData(quoteForm);
   const lang = languageSelect?.value || "en";
+  const attachment = data.get("attachment");
+  const attachmentName = attachment && attachment.name ? attachment.name : "Not attached in browser";
   const requestIntro = {
     en: "Hello Scriptorium, I would like to request a service proposal.",
     es: "Hola Scriptorium, me gustaría solicitar una propuesta de servicio.",
@@ -157,6 +159,7 @@ quoteForm.addEventListener("submit", (event) => {
     `${translateText("File format", lang)}: ${data.get("fileFormat") || "Not provided"}`,
     `${translateText("Review level", lang)}: ${data.get("reviewLevel") || "Not provided"}`,
     `${translateText("Confidentiality", lang)}: ${data.get("confidentiality") || "Not marked"}`,
+    `${translateText("Reference file", lang)}: ${attachmentName}`,
     `${translateText("Project scope", lang)}: ${data.get("message") || "No additional notes"}`,
     "",
     noteLine[lang] || noteLine.en

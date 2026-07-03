@@ -439,6 +439,39 @@ p {
   font-size: 1rem;
 }
 
+.domain-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border-bottom: 1px solid var(--line);
+  background: var(--line);
+}
+
+.domain-strip div {
+  display: grid;
+  gap: 6px;
+  padding: 20px 7vw;
+  background: var(--surface-soft);
+}
+
+.domain-strip span,
+.field-help {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.domain-strip span {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.domain-strip strong,
+.domain-strip a {
+  color: var(--blue-deep);
+}
+
 .section-heading {
   max-width: 900px;
   margin-bottom: 38px;
@@ -757,6 +790,22 @@ p {
   font-size: 0.9rem;
 }
 
+.quote-logic {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.quote-logic article {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 22px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
 .solutions-grid article,
 .use-case-grid article,
 .resource-grid article {
@@ -795,6 +844,67 @@ p {
 
 .resource-grid article {
   border-top: 4px solid var(--gold);
+}
+
+.prep-section {
+  background:
+    linear-gradient(180deg, rgba(237, 243, 244, 0.84), rgba(255, 255, 255, 0.96)),
+    var(--page);
+}
+
+.prep-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.prep-grid article {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.prep-grid span {
+  color: #8b6f2d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.brand-kit-section {
+  background: #ffffff;
+}
+
+.brand-kit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.brand-kit-grid a {
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.brand-kit-grid span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.brand-kit-grid strong {
+  color: var(--blue-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
 }
 
 .hire-grid article {
@@ -1387,6 +1497,10 @@ textarea {
   resize: vertical;
 }
 
+input[type="file"] {
+  padding: 10px;
+}
+
 .checkbox-field {
   grid-template-columns: auto 1fr;
   align-items: start;
@@ -1450,6 +1564,21 @@ textarea {
   color: var(--muted);
 }
 
+.floating-whatsapp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 20;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  border-radius: 999px;
+  padding: 13px 18px;
+  background: #2f6b57;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 950;
+  box-shadow: 0 16px 32px rgba(31, 58, 68, 0.22);
+}
+
 @media (max-width: 1120px) {
   .menu-button {
     display: block;
@@ -1474,12 +1603,26 @@ textarea {
     display: flex;
   }
 
+  .site-nav.force-visible {
+    display: flex;
+    position: static;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
   .hero,
   .today-grid,
   .publication-grid,
   .article-preview-grid,
   .portfolio-grid,
   .pricing-grid,
+  .prep-grid,
+  .brand-kit-grid,
   .solutions-grid,
   .method-timeline,
   .quality-panel,
@@ -1502,6 +1645,8 @@ textarea {
   .ancient-section,
   .contact-section,
   .quick-contact,
+  .domain-strip,
+  .quote-logic,
   .portfolio-head,
   .contract-template {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1588,6 +1733,8 @@ textarea {
   .article-preview-grid,
   .portfolio-grid,
   .pricing-grid,
+  .prep-grid,
+  .brand-kit-grid,
   .solutions-grid,
   .method-timeline,
   .quality-panel,
@@ -1610,6 +1757,8 @@ textarea {
   .ancient-section,
   .contact-section,
   .quick-contact,
+  .domain-strip,
+  .quote-logic,
   .portfolio-head,
   .contract-template,
   .limits-panel,
