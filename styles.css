@@ -1586,6 +1586,157 @@ input[type="file"] {
     var(--ivory);
 }
 
+.client-path-section {
+  background:
+    linear-gradient(180deg, #ffffff, rgba(237, 243, 244, 0.72)),
+    var(--page);
+}
+
+.client-path-grid,
+.course-grid,
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.client-path-card,
+.course-offer-card,
+.store-grid article {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.client-path-card img,
+.course-offer-card img,
+.store-grid img,
+.library-grid img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+
+.client-path-card div,
+.course-offer-card div,
+.store-grid article > div {
+  padding: 24px;
+}
+
+.client-path-card span,
+.course-offer-card span,
+.store-grid span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.client-path-card a {
+  color: var(--blue-deep);
+  font-weight: 950;
+}
+
+.course-hero {
+  display: grid;
+  min-height: calc(100vh - 76px);
+  grid-template-columns: minmax(0, 0.82fr) minmax(420px, 1.18fr);
+  gap: 48px;
+  align-items: center;
+  padding: 72px 7vw;
+  background:
+    linear-gradient(110deg, rgba(255, 255, 255, 0.96), rgba(251, 247, 238, 0.88)),
+    var(--ivory);
+}
+
+.course-hero-copy p:not(.eyebrow) {
+  max-width: 720px;
+  font-size: 1.08rem;
+}
+
+.course-hero h1 {
+  max-width: 760px;
+  font-size: clamp(2.7rem, 5vw, 4.35rem);
+  line-height: 1.02;
+}
+
+.course-hero-media {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line-warm);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.course-hero-media img {
+  width: 100%;
+  min-height: 440px;
+  object-fit: cover;
+}
+
+.course-path-section,
+.sample-lesson-section {
+  background: #ffffff;
+}
+
+.store-section {
+  border-block: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(247, 244, 235, 0.9), rgba(237, 243, 244, 0.72)),
+    var(--page);
+}
+
+.course-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.course-offer-card {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+}
+
+.course-offer-card img {
+  height: 100%;
+  min-height: 430px;
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+}
+
+.course-offer-card ul,
+.store-checklist {
+  margin: 16px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.78;
+}
+
+.lesson-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lesson-steps article {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+.lesson-steps span {
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
 .philology-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
@@ -1793,9 +1944,10 @@ input[type="file"] {
     var(--page);
 }
 
-.social-kit-grid {
+.social-kit-grid,
+.social-post-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -1810,11 +1962,11 @@ input[type="file"] {
   border-bottom: 1px solid var(--line);
 }
 
-.social-card:nth-child(2) img {
+.social-post-grid .social-card img {
   aspect-ratio: 1 / 1;
 }
 
-.social-card:nth-child(3) img {
+.social-kit-grid .social-card:nth-child(3) img {
   aspect-ratio: 9 / 14;
 }
 
@@ -1933,6 +2085,24 @@ input[type="file"] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .social-post-grid,
+  .client-path-grid,
+  .store-grid,
+  .lesson-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .course-hero,
+  .course-offer-card {
+    grid-template-columns: 1fr;
+  }
+
+  .course-offer-card img {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
   .library-stamp {
     margin-bottom: 0;
   }
@@ -2015,6 +2185,13 @@ input[type="file"] {
   .script-panel,
   .profile-estimator,
   .social-kit-grid,
+  .social-post-grid,
+  .client-path-grid,
+  .course-grid,
+  .store-grid,
+  .lesson-steps,
+  .course-hero,
+  .course-offer-card,
   .publication-grid,
   .article-preview-grid,
   .portfolio-grid,

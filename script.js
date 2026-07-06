@@ -85,13 +85,15 @@ function applyLanguage(lang) {
   localStorage.setItem("scriptorium-language", lang);
 }
 
-menuButton.addEventListener("click", () => {
-  siteNav.classList.toggle("open");
-});
+if (menuButton && siteNav) {
+  menuButton.addEventListener("click", () => {
+    siteNav.classList.toggle("open");
+  });
 
-siteNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => siteNav.classList.remove("open"));
-});
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => siteNav.classList.remove("open"));
+  });
+}
 
 if (languageSelect) {
   const savedLanguage = localStorage.getItem("scriptorium-language") || "es";
@@ -324,6 +326,7 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("in-view"));
 }
 
+if (quoteForm) {
 quoteForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -418,3 +421,4 @@ quoteForm.addEventListener("submit", (event) => {
     }
   );
 });
+}
