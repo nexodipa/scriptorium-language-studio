@@ -6,6 +6,14 @@ const quoteForm = document.querySelector("#quote-form");
 const formNote = document.querySelector("#form-note");
 const whatsappRequestLink = document.querySelector("#whatsapp-request-link");
 const languageSelect = document.querySelector("#language-select");
+const lensButtons = document.querySelectorAll(".lens-button");
+const lensPanel = document.querySelector("#philology-panel");
+const scriptButtons = document.querySelectorAll(".script-button");
+const scriptPanel = document.querySelector("#script-panel");
+const profileService = document.querySelector("#profile-service");
+const profileWords = document.querySelector("#profile-words");
+const profileUrgency = document.querySelector("#profile-urgency");
+const profileOutput = document.querySelector("#profile-output");
 const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
 
@@ -108,6 +116,213 @@ filterButtons.forEach((button) => {
     });
   });
 });
+
+const philologyData = {
+  text: {
+    number: "01",
+    title: "Texto",
+    body: "Se revisa el archivo real: soporte, legibilidad, extensión, citas, tablas, imágenes y estado editable.",
+    points: [
+      "Evita cotizaciones a ciegas.",
+      "Define si se necesita traducción, edición, glosario o reconstrucción.",
+      "Protege documentos sensibles desde el primer contacto."
+    ]
+  },
+  form: {
+    number: "02",
+    title: "Forma",
+    body: "La forma del documento también comunica: estructura, notas, interfaz, maquetación, citas y jerarquía visual.",
+    points: [
+      "Ayuda a preservar tablas, marcas y referencias.",
+      "Evita entregar texto correcto en un formato incómodo.",
+      "Distingue traducción documental de publicación."
+    ]
+  },
+  language: {
+    number: "03",
+    title: "Lengua",
+    body: "Se observa gramática, registro, terminología, variación regional y nivel de intervención requerido.",
+    points: [
+      "El tono no es igual para tesis, app, marca o clase.",
+      "La terminología se puede convertir en glosario.",
+      "El idioma destino se adapta al lector real."
+    ]
+  },
+  context: {
+    number: "04",
+    title: "Contexto",
+    body: "El texto se lee por época, género, público, canal y objetivo. En lenguas antiguas, el contexto evita interpretaciones infladas.",
+    points: [
+      "Se separa traducción de explicación.",
+      "Se aclaran límites educativos o profesionales.",
+      "Se define si hace falta nota cultural."
+    ]
+  },
+  delivery: {
+    number: "05",
+    title: "Entrega",
+    body: "El resultado puede ser PDF, DOCX, glosario, guía, muestra anotada, publicación bilingüe o paquete de localización.",
+    points: [
+      "Cada entrega se define antes de iniciar.",
+      "Las revisiones se atan al alcance acordado.",
+      "Los archivos finales deben ser útiles, no solo bonitos."
+    ]
+  }
+};
+
+function renderPhilologyLens(key) {
+  const item = philologyData[key] || philologyData.text;
+  if (!lensPanel) {
+    return;
+  }
+
+  lensPanel.innerHTML = `
+    <span>${item.number}</span>
+    <h3>${item.title}</h3>
+    <p>${item.body}</p>
+    <ul>${item.points.map((point) => `<li>${point}</li>`).join("")}</ul>
+  `;
+}
+
+lensButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    lensButtons.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    renderPhilologyLens(button.dataset.lens);
+  });
+});
+
+const scriptData = {
+  latin: {
+    mark: "LAT",
+    title: "Latín",
+    body: "Útil para frases, inscripciones breves, citas académicas y notas de lectura con traducción educativa.",
+    delivery: "Entrega sugerida: original, transliteración si aplica, traducción de muestra y nota de contexto."
+  },
+  greek: {
+    mark: "GRC",
+    title: "Griego antiguo",
+    body: "Requiere separar alfabeto, transliteración, morfología básica y sentido contextual antes de explicar una cita.",
+    delivery: "Entrega sugerida: lectura guiada, glosario mínimo y nota sobre variante o fuente."
+  },
+  hebrew: {
+    mark: "HEB",
+    title: "Hebreo bíblico",
+    body: "Se trabaja con cuidado direccional, transliteración y límites de interpretación, especialmente en textos religiosos.",
+    delivery: "Entrega sugerida: muestra breve, transliteración, traducción educativa y advertencia de alcance."
+  },
+  arabic: {
+    mark: "AR",
+    title: "Árabe clásico",
+    body: "Conviene revisar escritura, vocalización, fuente y contexto antes de traducir fragmentos literarios o históricos.",
+    delivery: "Entrega sugerida: lectura orientativa, nota gramatical y explicación cultural."
+  },
+  sanskrit: {
+    mark: "SA",
+    title: "Sánscrito",
+    body: "Puede requerir transliteración normalizada, identificación de términos y explicación de función gramatical.",
+    delivery: "Entrega sugerida: transliteración, glosario básico y nota de uso académico."
+  },
+  runic: {
+    mark: "RUN",
+    title: "Escrituras rúnicas",
+    body: "Se tratan como muestras históricas: lectura prudente, identificación de signos y contexto material.",
+    delivery: "Entrega sugerida: tabla de signos, transliteración tentativa y límites de lectura."
+  }
+};
+
+function renderScript(key) {
+  const item = scriptData[key] || scriptData.latin;
+  if (!scriptPanel) {
+    return;
+  }
+
+  scriptPanel.innerHTML = `
+    <span class="script-mark">${item.mark}</span>
+    <div>
+      <h3>${item.title}</h3>
+      <p>${item.body}</p>
+      <strong>${item.delivery}</strong>
+    </div>
+  `;
+}
+
+scriptButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    scriptButtons.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    renderScript(button.dataset.script);
+  });
+});
+
+const profileCopy = {
+  translation: {
+    title: "Traducción documental",
+    checklist: ["Idioma origen y destino", "Formato editable", "Uso final", "Glosario o referencias de estilo"]
+  },
+  localization: {
+    title: "Localización web/app",
+    checklist: ["URL o capturas", "Lista de pantallas o strings", "Público objetivo", "Tono de marca"]
+  },
+  academic: {
+    title: "Académico o investigación",
+    checklist: ["Disciplina", "Norma de citas", "Resumen del objetivo", "Nivel de revisión editorial"]
+  },
+  ancient: {
+    title: "Lengua antigua o transliteración",
+    checklist: ["Imagen o fuente del fragmento", "Extensión breve", "Uso educativo", "Tipo de nota requerida"]
+  },
+  social: {
+    title: "Publicación o marca",
+    checklist: ["Canal de publicación", "Audiencia", "Tono deseado", "Formato final"]
+  }
+};
+
+function renderProfileOutput() {
+  if (!profileOutput) {
+    return;
+  }
+
+  const service = profileCopy[profileService?.value] || profileCopy.translation;
+  const words = Number(profileWords?.value || 0);
+  const urgency = profileUrgency?.value || "flexible";
+  const volume = words > 5000 ? "alto" : words > 1800 ? "medio" : "breve";
+  const urgencyLabel = {
+    flexible: "La entrega flexible permite revisar mejor terminología, formato y notas.",
+    normal: "La entrega normal debe confirmarse con archivo o fragmento antes de cotizar.",
+    urgent: "La entrega urgente puede limitar revisiones o requerir alcance más pequeño."
+  };
+
+  profileOutput.innerHTML = `
+    <h3>${service.title}</h3>
+    <p><strong>Perfil estimado:</strong> proyecto ${volume}, ${words || "sin"} palabras aproximadas. ${urgencyLabel[urgency]}</p>
+    <p>Para cotizar con precisión, prepara:</p>
+    <ul>${service.checklist.map((item) => `<li>${item}</li>`).join("")}</ul>
+  `;
+}
+
+[profileService, profileWords, profileUrgency].forEach((field) => {
+  field?.addEventListener("input", renderProfileOutput);
+  field?.addEventListener("change", renderProfileOutput);
+});
+
+renderProfileOutput();
+
+const revealItems = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.16 });
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("in-view"));
+}
 
 quoteForm.addEventListener("submit", (event) => {
   event.preventDefault();

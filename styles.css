@@ -1579,6 +1579,280 @@ input[type="file"] {
   box-shadow: 0 16px 32px rgba(31, 58, 68, 0.22);
 }
 
+.philology-section {
+  border-block: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 244, 235, 0.82)),
+    var(--ivory);
+}
+
+.philology-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.philology-lab,
+.philology-visual,
+.script-console,
+.profile-estimator,
+.social-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+}
+
+.philology-lab {
+  display: grid;
+  align-content: start;
+  gap: 22px;
+  padding: 24px;
+}
+
+.lens-controls,
+.script-buttons,
+.launch-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lens-button,
+.script-button {
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 15px;
+  background: #ffffff;
+  color: var(--ink-soft);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 900;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.lens-button:hover,
+.script-button:hover,
+.lens-button.active,
+.script-button.active {
+  border-color: var(--blue);
+  background: var(--blue-deep);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.lens-panel {
+  min-height: 360px;
+  border: 1px solid var(--line-warm);
+  border-radius: var(--radius);
+  padding: 30px;
+  background:
+    linear-gradient(180deg, #fffdf7, #ffffff);
+}
+
+.lens-panel span,
+.script-mark,
+.social-card span {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.lens-panel ul {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.philology-visual {
+  overflow: hidden;
+  margin: 0;
+}
+
+.philology-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+}
+
+.philology-visual figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.philology-visual a,
+.social-card a,
+.launch-files a {
+  color: var(--blue-deep);
+  font-weight: 900;
+}
+
+.script-explorer-section,
+.project-profile-section {
+  background: #ffffff;
+}
+
+.script-console {
+  display: grid;
+  grid-template-columns: 0.42fr 0.58fr;
+  gap: 22px;
+  padding: 26px;
+}
+
+.script-buttons {
+  align-content: start;
+}
+
+.script-panel {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  align-items: center;
+  min-height: 250px;
+  border: 1px solid var(--line-warm);
+  border-radius: var(--radius);
+  padding: 30px;
+  background:
+    linear-gradient(135deg, #fffdf7, #edf3f4);
+}
+
+.script-mark {
+  justify-content: center;
+  align-items: center;
+  width: 132px;
+  height: 132px;
+  margin-bottom: 0;
+  border: 1px solid rgba(201, 168, 87, 0.55);
+  border-radius: var(--radius);
+  background: #ffffff;
+  color: var(--blue-deep);
+  font-size: 2.4rem;
+}
+
+.script-panel strong,
+.profile-output strong {
+  color: var(--blue-deep);
+}
+
+.profile-estimator {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: 24px;
+  padding: 26px;
+}
+
+.profile-controls {
+  display: grid;
+  gap: 14px;
+}
+
+.profile-controls label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink-soft);
+  font-weight: 900;
+}
+
+.profile-output {
+  min-height: 280px;
+  border: 1px solid var(--line-warm);
+  border-radius: var(--radius);
+  padding: 28px;
+  background:
+    linear-gradient(180deg, #fffdf7, #ffffff);
+}
+
+.profile-output h3 {
+  margin-bottom: 12px;
+}
+
+.profile-output ul {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.78;
+}
+
+.social-launch-section {
+  border-block: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(237, 243, 244, 0.8), rgba(251, 247, 238, 0.8)),
+    var(--page);
+}
+
+.social-kit-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  gap: 18px;
+}
+
+.social-card {
+  overflow: hidden;
+}
+
+.social-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+
+.social-card:nth-child(2) img {
+  aspect-ratio: 1 / 1;
+}
+
+.social-card:nth-child(3) img {
+  aspect-ratio: 9 / 14;
+}
+
+.social-card div {
+  padding: 20px;
+}
+
+.social-card span {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.launch-files {
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.launch-files a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0 16px;
+  background: #ffffff;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 1120px) {
   .menu-button {
     display: block;
@@ -1616,6 +1890,9 @@ input[type="file"] {
   }
 
   .hero,
+  .philology-layout,
+  .script-console,
+  .profile-estimator,
   .today-grid,
   .publication-grid,
   .article-preview-grid,
@@ -1649,6 +1926,10 @@ input[type="file"] {
   .quote-logic,
   .portfolio-head,
   .contract-template {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .social-kit-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1729,6 +2010,11 @@ input[type="file"] {
   }
 
   .today-grid,
+  .philology-layout,
+  .script-console,
+  .script-panel,
+  .profile-estimator,
+  .social-kit-grid,
   .publication-grid,
   .article-preview-grid,
   .portfolio-grid,
@@ -1766,6 +2052,19 @@ input[type="file"] {
   .form-actions-secondary,
   .about-card {
     grid-template-columns: 1fr;
+  }
+
+  .philology-visual img {
+    min-height: auto;
+  }
+
+  .philology-visual figcaption {
+    display: grid;
+  }
+
+  .script-mark {
+    width: 100%;
+    height: 96px;
   }
 
   .about-card {
