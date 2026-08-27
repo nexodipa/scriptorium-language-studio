@@ -3,1749 +3,248 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scriptorium | Filología aplicada, traducción, localización y documentación</title>
-    <meta
-      name="description"
-      content="Scriptorium es un estudio de filología aplicada para traducción académica, localización web, transcreación, lenguas antiguas, documentación, publicaciones y materiales educativos por cotización."
-    />
-    <meta property="og:title" content="Scriptorium | Estudio de idiomas y documentación" />
-    <meta property="og:description" content="Traducción académica, localización web, lenguas antiguas, publicaciones, acuerdos de servicio y materiales educativos por cotización." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://josuest-b.github.io/scriptorium-language-studio/assets/social-facebook-cover.png" />
+    <title>Scriptorium Language Studio | Traducción y filología aplicada</title>
+    <meta name="description" content="Estudio independiente de traducción, localización, edición académica y documentación de textos históricos. Evaluación previa, alcance escrito y revisión responsable." />
+    <link rel="canonical" href="https://josuest-b.github.io/scriptorium-language-studio/" />
+    <link rel="alternate" hreflang="es" href="https://josuest-b.github.io/scriptorium-language-studio/" />
+    <link rel="alternate" hreflang="en" href="https://josuest-b.github.io/scriptorium-language-studio/en.html" />
+    <link rel="alternate" hreflang="x-default" href="https://josuest-b.github.io/scriptorium-language-studio/" />
     <link rel="icon" href="assets/favicon.ico" sizes="any" />
     <link rel="icon" href="assets/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="styles.css?v=philology-suite-20260706" />
-    <link rel="canonical" href="https://josuest-b.github.io/scriptorium-language-studio/" />
-    <meta name="author" content="Josue Puglla - Scriptorium" />
-    <meta name="keywords" content="filologia aplicada, traduccion profesional, traduccion academica, traduccion espanol ingles, localizacion web, localizacion de apps, transcreacion, lenguas antiguas, latin, griego antiguo, hebreo, arabe clasico, sanscrito, documentacion, contratos de servicio, Scriptorium" />
+    <link rel="stylesheet" href="styles.css?v=audit-20260827" />
+    <meta name="author" content="Josue Puglla - Scriptorium Language Studio" />
+    <meta property="og:title" content="Scriptorium Language Studio" />
+    <meta property="og:description" content="Traducción, localización y filología aplicada con alcance claro y revisión responsable." />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://josuest-b.github.io/scriptorium-language-studio/" />
+    <meta property="og:image" content="https://josuest-b.github.io/scriptorium-language-studio/assets/social-facebook-cover.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Scriptorium | Estudio de idiomas, textos antiguos y documentación" />
-    <meta name="twitter:description" content="Traducción académica, localización web, documentación de lenguas antiguas, publicaciones y materiales educativos por cotización." />
-    <meta name="twitter:image" content="https://josuest-b.github.io/scriptorium-language-studio/assets/social-facebook-cover.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Scriptorium Language Studio",
+        "description": "Estudio independiente de traducción, localización, edición académica y filología aplicada.",
+        "url": "https://josuest-b.github.io/scriptorium-language-studio/",
+        "image": "https://josuest-b.github.io/scriptorium-language-studio/assets/logo-horizontal.png",
+        "email": "mailto:josuepug@gmail.com",
+        "telephone": "+593987411592",
+        "founder": { "@type": "Person", "name": "Josue Puglla" },
+        "areaServed": "Remote",
+        "sameAs": ["https://www.fiverr.com/s/Zm7Bjza"]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Scriptorium home">
-        <img class="brand-logo" src="assets/logo-icon.png" alt="Scriptorium logo" />
-        <span>
-          <strong>Scriptorium</strong>
-          <small>Idiomas · Textos · Documentación</small>
-        </span>
+      <a class="brand" href="#home" aria-label="Inicio de Scriptorium">
+        <img class="brand-logo" src="assets/logo-icon.png" alt="" />
+        <span><strong>Scriptorium</strong><small>Language Studio · Ecuador</small></span>
       </a>
-
-      <button class="menu-button" id="menu-button" type="button" aria-label="Open menu">
+      <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
-
-      <div class="language-switcher" aria-label="Language selector">
-        <label for="language-select">Idioma</label>
-        <select id="language-select" name="language">
-          <option value="en">EN</option>
-          <option value="es" selected>ES</option>
-          <option value="de">DE</option>
-          <option value="fr">FR</option>
-          <option value="pt">PT</option>
-          <option value="it">IT</option>
-          <option value="ru">RU</option>
-          <option value="cs">CS</option>
-          <option value="zh">ZH</option>
-          <option value="ja">JA</option>
-          <option value="he">HE</option>
-          <option value="ar">AR</option>
-        </select>
-      </div>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
         <a href="#services">Servicios</a>
-        <a href="#philology">Filología</a>
-        <a href="#ancient">Lenguas antiguas</a>
-        <a href="cursos.html">Cursos y tienda</a>
-        <a href="#social-launch">Redes</a>
-        <a href="#portfolio">Portafolio</a>
-        <a href="en.html">EN</a>
-        <a class="nav-cta" href="#contact">Cotizar</a>
+        <a href="#method">Método</a>
+        <a href="#samples">Muestras</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="#about">Estudio</a>
+        <a href="en.html" lang="en" hreflang="en">English</a>
+        <a class="nav-cta" href="#contact">Solicitar evaluación</a>
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero" id="home">
         <div class="hero-media">
-          <img src="assets/scriptorium-philology-hero-framed.png" alt="Mesa editorial con manuscritos y capas de escritura" />
+          <img src="assets/scriptorium-philology-hero-framed.png" alt="Mesa editorial con manuscritos, notas y herramientas de estudio lingüístico" />
         </div>
         <div class="hero-scrim"></div>
         <div class="hero-content">
-          <p class="eyebrow">Filología aplicada</p>
+          <p class="eyebrow">Traducción · Localización · Filología aplicada</p>
           <h1>Scriptorium</h1>
           <p class="hero-signature">Precision Across Languages</p>
-          <p class="hero-lead">
-            Traducción, localización y documentación lingüística con lectura de contexto,
-            criterio editorial y entregables claros para proyectos académicos, comerciales e históricos.
-          </p>
+          <p class="hero-lead">Textos académicos, comerciales y culturales trabajados con contexto, terminología consistente y entregables definidos antes de comenzar.</p>
           <div class="hero-actions">
-            <a class="primary-button" href="#contact">Solicitar cotización</a>
-            <a class="secondary-button" href="https://wa.me/593987411592">WhatsApp</a>
-            <a class="secondary-button" href="cursos.html">Ver cursos y tienda</a>
+            <a class="primary-button" href="#contact">Solicitar evaluación</a>
+            <a class="secondary-button" href="#samples">Revisar muestras</a>
           </div>
-          <div class="hero-contact-strip" aria-label="Contacto rapido">
+          <div class="hero-contact-strip" aria-label="Canales de contacto">
             <a href="mailto:josuepug@gmail.com">josuepug@gmail.com</a>
-            <a href="https://www.fiverr.com/s/Zm7Bjza">Fiverr</a>
-          </div>
-          <div class="trust-row" aria-label="Scriptorium pillars">
-            <span>Filología aplicada</span>
-            <span>Idiomas modernos</span>
-            <span>Textos históricos</span>
-            <span>Documentos académicos</span>
-            <span>Localización</span>
+            <a href="https://wa.me/593987411592" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://www.fiverr.com/s/Zm7Bjza" target="_blank" rel="noopener">Fiverr</a>
           </div>
         </div>
       </section>
 
-      <section class="quick-contact" aria-label="Contacto principal">
-        <a href="mailto:josuepug@gmail.com"><span>Correo</span><strong>josuepug@gmail.com</strong></a>
-        <a href="https://wa.me/593987411592"><span>WhatsApp</span><strong>+593 98 741 1592</strong></a>
-        <a href="https://www.fiverr.com/s/Zm7Bjza"><span>Fiverr</span><strong>Contratar servicio</strong></a>
+      <section class="service-status" aria-label="Alcance general del estudio">
+        <span><strong>Atención:</strong> español e inglés</span>
+        <span><strong>Otros idiomas:</strong> previa evaluación</span>
+        <span><strong>Modalidad:</strong> remota</span>
+        <span><strong>Contratación:</strong> alcance escrito</span>
       </section>
 
-      <section class="domain-strip" aria-label="Dominio y correo profesional">
-        <div>
-          <span>Dominio propio previsto</span>
-          <strong>Publicación con dominio propio prevista para la etapa final de marca.</strong>
-        </div>
-        <div>
-          <span>Correo actual de trabajo</span>
-          <strong><a href="mailto:josuepug@gmail.com">josuepug@gmail.com</a></strong>
-        </div>
-        <div>
-          <span>Correo operativo</span>
-          <strong>Respuesta por correo, WhatsApp o Fiverr</strong>
-        </div>
-      </section>
-
-      <section class="mission-section">
-        <div>
-          <p class="eyebrow">Qué es Scriptorium</p>
-          <h2>Un estudio de idiomas con método filológico, no una fábrica de textos genéricos.</h2>
-        </div>
-        <p>
-          Scriptorium trabaja cuando el texto necesita algo más que equivalencias:
-          lectura de forma, contexto, registro, uso final y entrega profesional. La web
-          queda pensada para contratar servicios, revisar muestras y preparar solicitudes
-          sin exponer archivos sensibles antes de acordar condiciones.
-        </p>
-      </section>
-
-      <section class="section client-path-section" id="start-here">
+      <section class="section client-path-section" aria-labelledby="path-title">
         <div class="section-heading centered">
-          <p class="eyebrow">Elige tu ruta</p>
-          <h2>La web ahora se ordena por lo que el cliente quiere hacer.</h2>
-          <p>
-            Traducción, estudio de lenguas antiguas y materiales pedagógicos son líneas
-            distintas. Cada una tiene ejemplos, entregables y una forma de solicitar el servicio.
-          </p>
+          <p class="eyebrow">Elige una ruta</p>
+          <h2 id="path-title">Tres líneas de trabajo, cada una con un propósito claro.</h2>
+          <p>La evaluación inicial determina viabilidad, formato, revisión y entrega. No es necesario enviar documentos sensibles para empezar.</p>
         </div>
         <div class="client-path-grid">
           <article class="client-path-card reveal">
-            <img src="assets/translation-workspace.png" alt="Mesa profesional de traducción y documentos" loading="lazy" />
-            <div>
-              <span>Necesito un servicio</span>
-              <h3>Traducción, localización o documentación</h3>
-              <p>Para tesis, web, marca, documentos, publicaciones y textos que requieren revisión humana.</p>
-              <a href="#services">Ver servicios</a>
-            </div>
+            <img src="assets/translation-workspace.png" alt="Documentos preparados para traducción y edición" loading="lazy" />
+            <div><span>Servicios</span><h3>Traducir o localizar</h3><p>Documentos, sitios web, interfaces y contenidos que deben funcionar para otro lector o mercado.</p><a href="#services">Explorar servicios</a></div>
           </article>
           <article class="client-path-card reveal">
-            <img src="assets/ancient-language-classroom.png" alt="Mesa de estudio de lenguas antiguas" loading="lazy" />
-            <div>
-              <span>Quiero aprender</span>
-              <h3>Clases y cursos de idiomas</h3>
-              <p>Mini cursos, clases introductorias y sesiones guiadas de traducción, localización y lenguas antiguas.</p>
-              <a href="cursos.html">Ir a cursos</a>
-            </div>
+            <img src="assets/ancient-language-classroom.png" alt="Materiales de estudio de lenguas históricas" loading="lazy" />
+            <div><span>Filología</span><h3>Estudiar un texto histórico</h3><p>Transliteración, comentario y material educativo con fuentes y límites de interpretación visibles.</p><a href="#historical">Ver enfoque</a></div>
           </article>
           <article class="client-path-card reveal">
-            <img src="assets/pedagogical-shop.png" alt="Materiales pedagógicos descargables" loading="lazy" />
-            <div>
-              <span>Quiero materiales</span>
-              <h3>Tienda pedagógica</h3>
-              <p>Guías, fichas, glosarios y documentos editables para estudiar o preparar proyectos.</p>
-              <a href="cursos.html#store">Ver tienda</a>
-            </div>
+            <img src="assets/pedagogical-shop.png" alt="Guías y materiales pedagógicos descargables" loading="lazy" />
+            <div><span>Formación</span><h3>Aprender o usar materiales</h3><p>Clases introductorias, guías, plantillas y recursos para traducción y lectura lingüística.</p><a href="cursos.html">Ver cursos y materiales</a></div>
           </article>
         </div>
       </section>
 
-      <section class="section philology-section" id="philology">
+      <section class="section today-section" id="services" aria-labelledby="services-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Servicios</p>
+          <h2 id="services-title">Una oferta enfocada en problemas concretos.</h2>
+          <p>Otros pares de idiomas o áreas especializadas solo se aceptan después de confirmar competencia, fuentes y nivel de revisión.</p>
+        </div>
+        <div class="today-grid service-offer-grid">
+          <article><span>01 · Documentos</span><h3>Traducción y edición</h3><p>Textos académicos, empresariales, editoriales y generales con terminología y formato acordados.</p><strong>Por palabra o proyecto</strong></article>
+          <article><span>02 · Digital</span><h3>Localización web y UX</h3><p>Landing pages, interfaces, fichas de producto, ayuda y microcopy adaptados al contexto de uso.</p><strong>Por pantalla o lote</strong></article>
+          <article><span>03 · Académico</span><h3>Apoyo editorial</h3><p>Resúmenes, terminología, estructura y revisión lingüística sin sustituir la autoría ni garantizar aceptación.</p><strong>Por alcance</strong></article>
+          <article><span>04 · Histórico</span><h3>Anotación y transliteración</h3><p>Muestras breves y materiales educativos con separación entre original, transliteración, traducción y comentario.</p><strong>Uso educativo</strong></article>
+        </div>
+      </section>
+
+      <section class="section philology-section" id="method" aria-labelledby="method-title">
         <div class="section-heading">
-          <p class="eyebrow">Estudio filológico</p>
-          <h2>Una página de idiomas debe enseñar cómo se piensa el texto.</h2>
-          <p>
-            Esta capa convierte la marca en una experiencia más propia: el visitante puede
-            entender cómo se revisa un documento antes de pedir traducción, localización,
-            publicación, material educativo o una muestra de lengua antigua.
-          </p>
+          <p class="eyebrow">Método Scriptorium</p>
+          <h2 id="method-title">Cinco capas antes de entregar una sola línea.</h2>
+          <p>Esta lectura reduce errores de alcance y deja claro qué se revisa en cada proyecto.</p>
         </div>
         <div class="philology-layout">
           <div class="philology-lab reveal">
             <div class="lens-controls" role="tablist" aria-label="Capas de análisis filológico">
-              <button class="lens-button active" type="button" data-lens="text">Texto</button>
-              <button class="lens-button" type="button" data-lens="form">Forma</button>
-              <button class="lens-button" type="button" data-lens="language">Lengua</button>
-              <button class="lens-button" type="button" data-lens="context">Contexto</button>
-              <button class="lens-button" type="button" data-lens="delivery">Entrega</button>
+              <button class="lens-button active" type="button" role="tab" aria-selected="true" data-lens="text">Texto</button>
+              <button class="lens-button" type="button" role="tab" aria-selected="false" data-lens="form">Forma</button>
+              <button class="lens-button" type="button" role="tab" aria-selected="false" data-lens="language">Lengua</button>
+              <button class="lens-button" type="button" role="tab" aria-selected="false" data-lens="context">Contexto</button>
+              <button class="lens-button" type="button" role="tab" aria-selected="false" data-lens="delivery">Entrega</button>
             </div>
-            <div class="lens-panel" id="philology-panel" aria-live="polite">
-              <span>01</span>
-              <h3>Texto</h3>
-              <p>Se revisa el archivo real: soporte, legibilidad, extensión, citas, tablas, imágenes y estado editable.</p>
-              <ul>
-                <li>Evita cotizaciones a ciegas.</li>
-                <li>Define si se necesita traducción, edición, glosario o reconstrucción.</li>
-                <li>Protege documentos sensibles desde el primer contacto.</li>
-              </ul>
+            <div class="lens-panel" id="philology-panel" role="tabpanel" aria-live="polite">
+              <span>01</span><h3>Texto</h3><p>Se revisan soporte, legibilidad, extensión, citas, tablas, imágenes y estado editable.</p>
+              <ul><li>Evita cotizaciones a ciegas.</li><li>Define el nivel real de intervención.</li><li>Identifica riesgos antes de recibir archivos privados.</li></ul>
             </div>
           </div>
           <figure class="philology-visual reveal">
-            <img src="assets/scriptorium-philology-layers.png" alt="Mapa de trabajo filológico de Scriptorium" loading="lazy" />
-            <figcaption>
-              Mapa de lectura por capas.
-              <a href="assets/scriptorium-philology-layers.png" download>Descargar PNG</a>
-            </figcaption>
+            <img src="assets/scriptorium-philology-layers.png" alt="Mapa de las cinco capas del método Scriptorium" loading="lazy" />
+            <figcaption>Mapa del método <a href="portfolio/scriptorium-applied-philology-method-guide.pdf">Leer guía</a></figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="section language-desk-section" id="language-desk">
-        <div class="section-heading">
-          <p class="eyebrow">Mesa de idiomas</p>
-          <h2>Los idiomas se organizan por alcance, cotización y tipo de entrega.</h2>
-          <p>
-            Scriptorium trabaja con idiomas modernos y lenguas históricas sin inflar una sola
-            promesa. Cada proyecto se revisa por idioma, extensión, formato, especialidad,
-            urgencia y nivel de revisión antes de cotizar.
-          </p>
-        </div>
-        <div class="language-desk-grid">
-          <article>
-            <h3>Idiomas modernos de trabajo</h3>
-            <p>Español, inglés, alemán, francés, portugués, italiano, ruso, checo, chino, japonés, hebreo y árabe.</p>
-            <span>Traducción, localización, edición, documentos académicos, marca, web y materiales educativos.</span>
-          </article>
-          <article>
-            <h3>Solo por cotización</h3>
-            <p>No hay precios fijos públicos: el valor depende de alcance, idioma, urgencia, formato y revisión.</p>
-            <span>Se confirma viabilidad antes de aceptar archivos sensibles o trabajos especializados.</span>
-          </article>
-          <article>
-            <h3>Lenguas antiguas e históricas</h3>
-            <p>Latín, griego antiguo, hebreo bíblico, árabe clásico, sánscrito, nórdico antiguo y escrituras rúnicas.</p>
-            <span>Muestras anotadas, transliteración, notas de enseñanza y documentación cultural.</span>
-          </article>
-        </div>
-        <div class="language-table-wrap">
-          <table class="language-table">
-            <thead>
-              <tr><th>Area</th><th>Languages</th><th>Use</th><th>Client promise</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Modernos</td><td>ES, EN, DE, FR, PT, IT, RU, CS, ZH, JA, HE, AR</td><td>Servicio comercial por alcance</td><td>Solo cotización</td></tr>
-              <tr><td>Documental</td><td>Académico, web, marca, editorial</td><td>Traducción y localización</td><td>Revisión previa</td></tr>
-              <tr><td>Históricos</td><td>LA, GRC, HE, AR, SA, NON, runas</td><td>Estudio y anotación</td><td>Educativo, no certificado</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <figure class="infographic">
-          <img src="assets/info-languages-levels.png" alt="Languages by service level infographic" loading="lazy" />
-          <figcaption>Visual note: Languages by service level &middot; <a href="assets/info-languages-levels.png" download>Download PNG</a></figcaption>
-        </figure>
-      </section>
-
-      <section class="section today-section" id="services">
-        <div class="section-heading">
-          <p class="eyebrow">Servicios disponibles</p>
-          <h2>Servicios contratables por alcance.</h2>
-          <p>
-            Cada proyecto se revisa antes de cotizar para definir idioma, formato,
-            entregables, revisiones, confidencialidad y fecha de entrega.
-          </p>
-        </div>
-        <div class="today-grid">
-          <article>
-            <span>Traducción</span>
-            <h3>Traducción profesional de documentos</h3>
-            <p>Textos académicos, empresariales, web, marketing y documentos generales con revisión humana.</p>
-            <strong>Por cotización</strong>
-          </article>
-          <article>
-            <span>Localización</span>
-            <h3>Localización web, app y software</h3>
-            <p>Interfaces, landing pages, fichas de producto, centros de ayuda, textos de app y adaptación SEO.</p>
-            <strong>Por cotización</strong>
-          </article>
-          <article>
-            <span>Académico</span>
-            <h3>Documentación de investigación y tesis</h3>
-            <p>Resúmenes, propuestas, revisiones bibliográficas, capítulos, respuestas editoriales y anexos.</p>
-            <strong>Especializado</strong>
-          </article>
-          <article>
-            <span>Antiguo</span>
-            <h3>Notas de lenguas antiguas y transliteración</h3>
-            <p>Muestras anotadas, transliteración, notas de escritura y explicaciones educativas de textos históricos.</p>
-            <strong>Especializado</strong>
-          </article>
-          <article>
-            <span>Publicación</span>
-            <h3>Apoyo editorial y publicaciones</h3>
-            <p>Artículos, publicaciones bilingües, notas terminológicas y documentos PDF con presentación profesional.</p>
-            <strong>Por proyecto</strong>
-          </article>
-          <article>
-            <span>Enseñanza</span>
-            <h3>Materiales de aprendizaje lingüístico</h3>
-            <p>Guías de estudio, vocabularios, notas de pronunciación, mini-lecciones y comparativos de idiomas.</p>
-            <strong>Por proyecto</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="section pricing-section" id="pricing">
+      <section class="section portfolio-section" id="samples" aria-labelledby="samples-title">
         <div class="section-heading centered">
-          <p class="eyebrow">Paquetes orientativos</p>
-          <h2>Modalidades de trabajo.</h2>
-          <p>
-            Los precios finales dependen del idioma, extensión, especialidad, formato y urgencia.
-            La cotización se prepara según el tipo de documento y el nivel de revisión requerido.
-          </p>
+          <p class="eyebrow">Muestras seleccionadas</p>
+          <h2 id="samples-title">Pocas muestras, con procedencia y límites visibles.</h2>
+          <p>Son demostraciones creadas para el portafolio. No representan encargos de clientes ni certificaciones profesionales.</p>
         </div>
-        <div class="pricing-grid">
-          <article>
-            <span>01</span>
-            <h3>Traducción documental</h3>
-            <p>Documentos académicos, empresariales, artículos, páginas web y textos generales.</p>
-            <strong>Cotización por palabra o proyecto</strong>
+        <div class="dossier-desk selected-samples">
+          <article class="dossier-card">
+            <img src="assets/scriptorium-localization-ui-pack-preview.png" alt="Vista previa de muestra de localización web" loading="lazy" />
+            <div class="dossier-body"><span class="tag">Escenario ficticio</span><h3>Localización web y de interfaz</h3><p>Muestra propia de decisiones de tono, microcopy y adaptación de una experiencia digital.</p><div class="sample-disclosure">Demostración comercial · no es trabajo de cliente</div><div class="card-actions"><a href="portfolio/scriptorium-localization-ui-pack.pdf">Ver PDF</a></div></div>
           </article>
-          <article>
-            <span>02</span>
-            <h3>Localización digital</h3>
-            <p>Landing pages, UI, apps, e-commerce, productos digitales y textos de conversión.</p>
-            <strong>Cotización por pantalla o lote</strong>
+          <article class="dossier-card">
+            <img src="assets/scriptorium-classical-annotation-pack-preview.png" alt="Vista previa de anotación de texto clásico" loading="lazy" />
+            <div class="dossier-body"><span class="tag">Muestra educativa</span><h3>Anotación y transliteración</h3><p>Ejemplo de presentación separada del texto, la transliteración, la traducción y la nota contextual.</p><div class="sample-disclosure">Uso educativo · no certificado</div><div class="card-actions"><a href="portfolio/scriptorium-classical-annotation-pack.pdf">Ver PDF</a></div></div>
           </article>
-          <article>
-            <span>03</span>
-            <h3>Dossier académico</h3>
-            <p>Resumen, revisión lingüística, glosario, formato y apoyo editorial para investigación.</p>
-            <strong>Cotización por alcance</strong>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Lenguas antiguas</h3>
-            <p>Transliteración, notas explicativas, muestras anotadas y material educativo comparativo.</p>
-            <strong>Cotización por muestra</strong>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Publicación bilingüe</h3>
-            <p>Artículo breve, ficha informativa, infografía textual o publicación de portafolio.</p>
-            <strong>Cotización por pieza</strong>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>Acuerdo de servicio</h3>
-            <p>Documento base con alcance, entregables, revisiones, límites y confidencialidad.</p>
-            <strong>Cotización por plantilla</strong>
-          </article>
-        </div>
-        <div class="quote-logic">
-          <article>
-            <h3>Criterios de cotización</h3>
-            <p>Se revisa idioma origen, idioma destino, extensión, especialidad, formato, urgencia, nivel de revisión y confidencialidad. No se publican precios fijos para evitar promesas incorrectas.</p>
-          </article>
-          <article>
-            <h3>Factores adicionales</h3>
-            <p>Textos técnicos, archivos escaneados, maquetación compleja, investigación terminológica, localización SEO, revisión extra o entrega urgente requieren alcance adicional.</p>
+          <article class="dossier-card">
+            <img src="assets/scriptorium-service-brief-template-preview.png" alt="Vista previa del brief de servicio lingüístico" loading="lazy" />
+            <div class="dossier-body"><span class="tag">Plantilla operativa</span><h3>Brief de servicio lingüístico</h3><p>Formato para definir idiomas, uso, extensión, fecha, revisión y confidencialidad antes de cotizar.</p><div class="sample-disclosure">Plantilla editable · no es contrato legal</div><div class="card-actions"><a href="portfolio/scriptorium-service-brief-template.pdf">Ver PDF</a><a href="portfolio/scriptorium-service-brief-template.docx">Descargar DOCX</a></div></div>
           </article>
         </div>
       </section>
 
-      <section class="section solutions-section" id="solutions">
-        <div class="section-heading centered">
-          <p class="eyebrow">Soluciones por cliente</p>
-          <h2>Áreas de servicio.</h2>
-          <p>
-            Cada área exige un tratamiento distinto de registro, formato, terminología
-            y entrega.
-          </p>
-        </div>
-        <div class="solutions-grid">
-          <article>
-            <span>Academia</span>
-            <h3>Investigadores, tesis y publicaciones</h3>
-            <p>Resúmenes, propuestas, revisión lingüística, glosarios y apoyo editorial para textos académicos.</p>
-            <ul>
-              <li>Abstracts y artículos</li>
-              <li>Capítulos y anexos</li>
-              <li>Respuestas editoriales</li>
-            </ul>
-          </article>
-          <article>
-            <span>Negocios</span>
-            <h3>Empresas, marcas y documentos</h3>
-            <p>Traducción comercial, adaptación de tono, presentaciones, propuestas y documentación operativa.</p>
-            <ul>
-              <li>Perfiles de empresa</li>
-              <li>Propuestas y manuales</li>
-              <li>Copy bilingüe</li>
-            </ul>
-          </article>
-          <article>
-            <span>Digital</span>
-            <h3>Webs, apps y productos digitales</h3>
-            <p>Localización de interfaces, páginas de venta, mensajes de producto y contenido SEO multilingüe.</p>
-            <ul>
-              <li>UI strings</li>
-              <li>Landing pages</li>
-              <li>Centros de ayuda</li>
-            </ul>
-          </article>
-          <article>
-            <span>Histórico</span>
-            <h3>Textos antiguos y estudio comparativo</h3>
-            <p>Transliteración, anotación, notas de contexto y materiales educativos sobre lenguas históricas.</p>
-            <ul>
-              <li>Latín y griego</li>
-              <li>Hebreo y árabe clásico</li>
-              <li>Notas paleográficas</li>
-            </ul>
-          </article>
-          <article>
-            <span>Editorial</span>
-            <h3>Publicaciones y recursos bilingües</h3>
-            <p>Artículos breves, documentos de muestra, guías descargables y piezas educativas para portafolio.</p>
-            <ul>
-              <li>Guías de lectura</li>
-              <li>Notas terminológicas</li>
-              <li>PDFs de divulgación</li>
-            </ul>
-          </article>
-          <article>
-            <span>Contrato</span>
-            <h3>Alcance y condiciones de servicio</h3>
-            <p>Documentos base para definir entregables, revisiones, límites, confidencialidad y canales de entrega.</p>
-            <ul>
-              <li>Brief inicial</li>
-              <li>Acuerdo de alcance</li>
-              <li>Checklist de entrega</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section hire-section" id="hire">
-        <div class="section-heading centered">
-          <p class="eyebrow">Cómo contratar</p>
-          <h2>Un proceso simple para trabajos lingüísticos serios.</h2>
-          <p>
-            Todo proyecto empieza con alcance, no con improvisación. Así el cliente sabe qué
-            recibirá, cuándo lo recibirá y qué queda fuera del servicio.
-          </p>
-        </div>
-        <div class="hire-grid">
-          <article><span>1</span><h3>Envía el alcance</h3><p>Indica tipo de servicio, idiomas, extensión, fecha deseada y formato del archivo.</p></article>
-          <article><span>2</span><h3>Recibe revisión previa</h3><p>Scriptorium revisa complejidad, especialidad, formato y expectativas de entrega.</p></article>
-          <article><span>3</span><h3>Aprueba términos</h3><p>Se confirma alcance, revisiones, confidencialidad y límites antes de iniciar.</p></article>
-          <article><span>4</span><h3>Recibe archivos finales</h3><p>Se entregan los documentos acordados con formato, terminología y notas cuando aplique.</p></article>
-        </div>
-      </section>
-
-      <section class="section method-section" id="method">
-        <div class="section-heading centered">
-          <p class="eyebrow">Método Scriptorium</p>
-          <h2>Un flujo técnico para que el trabajo se sienta profesional desde el primer contacto.</h2>
-          <p>
-            Este método convierte una solicitud informal en un proyecto con diagnóstico,
-            criterios de calidad y entrega revisable.
-          </p>
-        </div>
-        <div class="method-timeline">
-          <article>
-            <span>01</span>
-            <h3>Diagnóstico del texto</h3>
-            <p>Se identifica idioma, género, público, especialidad, formato, urgencia y riesgo de confidencialidad.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Alcance y glosario</h3>
-            <p>Se definen entregables, términos clave, nombres propios, registro, límites y rondas de revisión.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Traducción o localización</h3>
-            <p>El contenido se trabaja por sentido, uso y contexto, no solo por equivalencia palabra por palabra.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Revisión de calidad</h3>
-            <p>Se revisan coherencia, terminología, tono, formato, legibilidad y cumplimiento del alcance acordado.</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Entrega documentada</h3>
-            <p>Se entregan archivos finales y, cuando aplique, notas de criterio, glosario o recomendaciones.</p>
-          </article>
-        </div>
-        <div class="quality-panel" aria-label="Criterios de calidad Scriptorium">
-          <article><strong>Sentido</strong><span>El texto conserva intención, precisión y función.</span></article>
-          <article><strong>Registro</strong><span>El tono se adapta al público: académico, comercial, educativo o editorial.</span></article>
-          <article><strong>Terminología</strong><span>Los términos especializados mantienen consistencia interna.</span></article>
-          <article><strong>Formato</strong><span>La estructura visual se respeta dentro del archivo acordado.</span></article>
-        </div>
-      </section>
-
-      <section class="section trust-section" id="trust">
-        <div class="section-heading">
-          <p class="eyebrow">Confianza profesional</p>
-          <h2>Señales de calidad claras, sin testimonios inventados.</h2>
-        </div>
-        <div class="trust-grid">
-          <article><h3>Manejo confidencial</h3><p>Los documentos privados se revisan solo dentro del alcance acordado.</p></article>
-          <article><h3>Revisión humana</h3><p>Se revisan sentido, tono, gramática, registro y utilidad real del texto.</p></article>
-          <article><h3>Formato preservado</h3><p>Se consideran títulos, tablas, listas, numeración y ritmo visual del documento.</p></article>
-          <article><h3>Control terminológico</h3><p>Los términos repetidos, nombres propios y registros especializados se mantienen consistentes.</p></article>
-          <article><h3>Alcance antes de entrega</h3><p>Se confirman idiomas, archivo, extensión, fecha y entregables antes de trabajar.</p></article>
-          <article><h3>Límites profesionales</h3><p>No se prometen servicios juramentados, asesoría legal, diagnóstico médico ni resultados académicos.</p></article>
-        </div>
-        <div class="trust-proof">
-          <article><strong>Portafolio verificable</strong><span>Muestras PDF y DOCX para revisar estilo, estructura y alcance.</span></article>
-          <article><strong>Contrato antes de trabajar</strong><span>El servicio se define por escrito antes de iniciar entregables.</span></article>
-          <article><strong>Límites transparentes</strong><span>No se ofrecen servicios certificados cuando no corresponden.</span></article>
-          <article><strong>Canales claros</strong><span>Correo, WhatsApp y Fiverr para coordinar según preferencia del cliente.</span></article>
-        </div>
-      </section>
-
-      <section class="section marketplace-section" id="marketplace">
-        <div class="section-heading centered">
-          <p class="eyebrow">Catálogo de servicios</p>
-          <h2>Ofertas claras que el cliente entiende rápido.</h2>
-          <p>
-            Estas líneas de servicio ayudan a que Scriptorium funcione como estudio
-            lingüístico listo para contratar: cada oferta tiene promesa, público y tipo
-            de documento definido.
-          </p>
-        </div>
-        <div class="marketplace-grid">
-          <article>
-            <img src="assets/gig-translation.png" alt="Professional translation service cover" />
-            <h3>Traducción</h3>
-            <p>Documentos académicos, empresariales y generales con terminología revisada.</p>
-          </article>
-          <article>
-            <img src="assets/gig-localization.png" alt="Localization service cover" />
-            <h3>Localización</h3>
-            <p>Webs, apps, textos de producto y experiencia de usuario multilingüe.</p>
-          </article>
-          <article>
-            <img src="assets/gig-transcreation.png" alt="Transcreation service cover" />
-            <h3>Transcreación</h3>
-            <p>Lenguaje de marketing adaptado por tono, intención e impacto cultural.</p>
-          </article>
-          <article>
-            <img src="assets/gig-branding.png" alt="Brand language service cover" />
-            <h3>Lenguaje de marca</h3>
-            <p>Naming, voz de marca, revisión cultural y copy bilingüe.</p>
-          </article>
-          <article>
-            <img src="assets/gig-medical-academic.png" alt="Medical academic language service cover" />
-            <h3>Académico especializado</h3>
-            <p>Redacción cuidadosa para salud, psicología e investigación.</p>
-          </article>
-        </div>
-        <figure class="infographic">
-          <img src="assets/info-what-is-transcreation.png" alt="What is transcreation infographic" loading="lazy" />
-          <figcaption>Visual note: What is transcreation? &middot; <a href="assets/info-what-is-transcreation.png" download>Download PNG</a></figcaption>
-        </figure>
-      </section>
-
-      <section class="section contract-section" id="contracts">
-        <div class="section-heading centered">
-          <p class="eyebrow">Mesa de contratos</p>
-          <h2>Antes de iniciar, el alcance queda escrito.</h2>
-          <p>
-            Scriptorium puede funcionar como una página lista para contratar: el cliente
-            elige un servicio, envía archivo o brief, recibe confirmación de alcance y
-            aprueba condiciones antes de la entrega.
-          </p>
-        </div>
-        <div class="contract-grid">
-          <article>
-            <span>01</span>
-            <h3>Alcance del proyecto</h3>
-            <p>Se define servicio, par de idiomas, campo del documento, extensión, fecha y formato de entrega.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Entregables</h3>
-            <p>Archivo traducido, edición, glosario, notas terminológicas, borrador editorial o material educativo.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Confidencialidad</h3>
-            <p>Los documentos se manejan de forma privada. Se puede usar NDA o cláusula de confidencialidad.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Términos de revisión</h3>
-            <p>Rondas de revisión, cambios de formato y solicitudes extra se separan del alcance inicial.</p>
-          </article>
-        </div>
-        <div class="limits-panel">
-          <div>
-            <h3>Puede incluir</h3>
-            <p>Traducción humana, localización, preservación de formato, glosario, checklist de calidad y maquetación documental.</p>
-          </div>
-          <div>
-            <h3>No promete</h3>
-            <p>Traducción juramentada, certificación judicial, asesoría legal, consejo médico, diagnóstico ni aceptación académica garantizada.</p>
-          </div>
-        </div>
-        <div class="contract-template">
-          <div>
-            <p class="eyebrow">Plantilla de acuerdo</p>
-            <h3>Cláusula recomendada de alcance</h3>
-            <p>
-              Scriptorium prestará servicios lingüísticos y documentales según el par
-              de idiomas, formato, extensión, fecha de entrega y revisiones acordadas.
-              Cualquier idioma adicional, urgencia, certificación, reconstrucción de
-              formato o manejo confidencial debe confirmarse antes de iniciar.
-            </p>
-          </div>
-          <ul>
-            <li>Título del proyecto y tipo de documento</li>
-            <li>Idioma origen e idioma destino</li>
-            <li>Extensión, formato de archivo y fecha de entrega</li>
-            <li>Rondas de revisión y términos de confidencialidad</li>
-            <li>Límites profesionales y estado no certificado</li>
+      <section class="section historical-focus" id="historical" aria-labelledby="historical-title">
+        <div class="historical-copy">
+          <p class="eyebrow">Textos históricos</p>
+          <h2 id="historical-title">Contexto primero; certeza solo cuando la evidencia la permite.</h2>
+          <p>La línea histórica se ofrece para estudio, anotación, transliteración y divulgación. Cada encargo debe indicar fuente, edición utilizada, convención de transliteración y revisión especializada cuando corresponda.</p>
+          <ul class="scope-list">
+            <li>Latín y griego antiguo en fragmentos breves.</li>
+            <li>Hebreo bíblico, árabe clásico, sánscrito y nórdico antiguo sujetos a evaluación.</li>
+            <li>No se autentican piezas, no se certifican inscripciones y no se reemplaza a un especialista.</li>
           </ul>
+          <a class="text-link" href="portfolio/ancient-scripts-annotated-samples.pdf">Revisar muestra educativa</a>
         </div>
+        <figure class="historical-media"><img src="assets/ancient-scripts.png" alt="Portada de una muestra educativa de escrituras históricas" loading="lazy" /></figure>
       </section>
 
-      <section class="section ancient-section" id="ancient">
-        <div class="ancient-copy">
-          <p class="eyebrow">Lenguas antiguas e históricas</p>
-          <h2>Escrituras históricas tratadas como estudio, anotación y documentación cultural.</h2>
-          <p>
-            Esta área le da a Scriptorium una identidad más profunda: latín, griego antiguo,
-            hebreo bíblico, árabe clásico, sánscrito, nórdico antiguo y escrituras rúnicas
-            pueden presentarse como muestras anotadas, transliteraciones, notas educativas
-            y trabajo lingüístico comparativo.
-          </p>
-          <a class="text-link" href="#contact">Solicitar muestra anotada</a>
-        </div>
-        <div class="script-grid" aria-label="Ancient language areas">
-          <article><strong>LA</strong><span>Latín</span><p>Frases clásicas, textos breves, lemas y muestras de traducción anotada.</p></article>
-          <article><strong>GRC</strong><span>Griego antiguo</span><p>Fragmentos filosóficos, notas gramaticales básicas y comentario bilingüe.</p></article>
-          <article><strong>HE</strong><span>Hebreo bíblico</span><p>Transliteración, notas de raíz, dirección de escritura y apoyo simbólico de lectura.</p></article>
-          <article><strong>AR</strong><span>Árabe clásico</span><p>Muestras de prosa clásica, notas de escritura y contexto cultural cuidadoso.</p></article>
-          <article><strong>SA</strong><span>Sánscrito</span><p>Transliteración IAST, pasajes breves y anotaciones amigables para estudio.</p></article>
-          <article><strong>NON</strong><span>Nórdico antiguo / rúnico</span><p>Formas rúnicas, nombres, notas de transliteración y muestras históricas.</p></article>
-        </div>
-        <figure class="infographic">
-          <img src="assets/info-six-scripts.png" alt="Six historical scripts infographic" loading="lazy" />
-          <figcaption>Visual note: Six historical scripts &middot; <a href="assets/info-six-scripts.png" download>Download PNG</a></figcaption>
-        </figure>
-      </section>
-
-      <section class="section ancient-samples-section" id="ancient-samples">
-        <div class="section-heading centered">
-          <p class="eyebrow">Muestras anotadas</p>
-          <h2>Las muestras breves de lenguas antiguas hacen creíble el archivo.</h2>
-          <p>Son demostraciones educativas concisas de cómo Scriptorium puede presentar trabajo lingüístico histórico.</p>
-          <a class="text-link" href="portfolio/ancient-scripts-annotated-samples.pdf">Ver PDF</a>
-        </div>
-        <div class="sample-grid">
-          <article>
-            <span>Latin</span>
-            <h3>Vita brevis, ars longa.</h3>
-            <p><strong>Translation:</strong> Life is short, art is long.</p>
-            <p><strong>Note:</strong> A classical aphoristic structure useful for motto translation and commentary.</p>
-          </article>
-          <article>
-            <span>Ancient Greek</span>
-            <h3>γνῶθι σεαυτόν</h3>
-            <p><strong>Transliteration:</strong> gnothi seauton.</p>
-            <p><strong>Translation:</strong> Know yourself.</p>
-          </article>
-          <article>
-            <span>Biblical Hebrew</span>
-            <h3>שָׁלוֹם</h3>
-            <p><strong>Transliteration:</strong> shalom.</p>
-            <p><strong>Note:</strong> Peace, wholeness or wellbeing depending on context.</p>
-          </article>
-          <article>
-            <span>Sanskrit</span>
-            <h3>धर्म</h3>
-            <p><strong>IAST:</strong> dharma.</p>
-            <p><strong>Note:</strong> Duty, order, law or teaching depending on tradition and text.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section publications-section" id="publications">
-        <div class="section-heading">
-          <p class="eyebrow">Publicaciones e información</p>
-          <h2>Archivo editorial y notas de trabajo.</h2>
-          <p>
-            Las publicaciones hacen que Scriptorium se sienta vivo: ensayos breves,
-            notas bilingües, terminología, comparaciones de idiomas y explicaciones
-            sobre escrituras antiguas.
-          </p>
-        </div>
-        <div class="publication-grid">
-          <article>
-            <span>Series</span>
-            <h3>Language Notes</h3>
-            <p>Posts on false friends, tone, register, translation decisions and why literal translation fails.</p>
-          </article>
-          <article>
-            <span>Archive</span>
-            <h3>Ancient Script Files</h3>
-            <p>Short entries on Latin, Greek, Hebrew, Arabic, Sanskrit and runic writing systems.</p>
-          </article>
-          <article>
-            <span>Professional</span>
-            <h3>Client Guides</h3>
-            <p>How to prepare a document, define language pairs, request localization and protect confidentiality.</p>
-          </article>
-          <article>
-            <span>Academic</span>
-            <h3>Research Writing Support</h3>
-            <p>Guides about abstracts, thesis chapters, ethics submissions and journal-facing language.</p>
-          </article>
-        </div>
-        <div class="article-preview-grid">
-          <article>
-            <span>Publication 01</span>
-            <h3>Translation vs. Localization</h3>
-            <p>Translation transfers meaning. Localization adapts the experience so a product, app or page feels native to a market.</p>
-            <a href="portfolio/translation-vs-localization.pdf">View PDF</a>
-          </article>
-          <article>
-            <span>Publication 02</span>
-            <h3>What Is Transcreation?</h3>
-            <p>Some messages cannot be translated literally because the goal is persuasion, memory and cultural impact.</p>
-            <a href="portfolio/what-is-transcreation.pdf">View PDF</a>
-          </article>
-          <article>
-            <span>Publication 03</span>
-            <h3>Why Ancient Scripts Matter</h3>
-            <p>Historical scripts create authority when they are handled with context, humility and clear annotation.</p>
-            <a href="portfolio/why-ancient-scripts-matter.pdf">View PDF</a>
-            <span aria-hidden="true" style="margin:0 10px;color:#B8932F;">·</span>
-            <a href="#ancient-samples">View samples</a>
-          </article>
-        </div>
-        <p class="info-gallery-title">Visual notes &mdash; tap any infographic to view full size</p>
-        <div class="info-gallery">
-          <figure>
-            <a href="assets/info-translation-vs-localization.png" target="_blank" rel="noopener"><img src="assets/info-translation-vs-localization.png" alt="Translation vs Localization infographic" loading="lazy" /></a>
-            <figcaption>Translation vs. Localization</figcaption>
-          </figure>
-          <figure>
-            <a href="assets/info-false-friends.png" target="_blank" rel="noopener"><img src="assets/info-false-friends.png" alt="False friends EN-ES infographic" loading="lazy" /></a>
-            <figcaption>False Friends: EN ↔ ES</figcaption>
-          </figure>
-          <figure>
-            <a href="assets/info-prepare-document.png" target="_blank" rel="noopener"><img src="assets/info-prepare-document.png" alt="Prepare your document infographic" loading="lazy" /></a>
-            <figcaption>Prepare Your Document</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="library-section" id="teaching">
-        <div class="section-heading centered">
-          <p class="eyebrow">Cursos y clases</p>
-          <h2>La parte pedagógica debe sentirse como una línea de negocio real.</h2>
-          <p>
-            Scriptorium también puede vender clases, mini cursos y documentos pedagógicos:
-            traducción práctica, localización, vocabulario académico y primeras lecturas de
-            lenguas antiguas.
-          </p>
-        </div>
-        <div class="library-grid">
-          <article>
-            <img src="assets/course-card-translation-localization.png" alt="Curso práctico de traducción y localización" />
-            <span>Curso guiado</span>
-            <h3>Traducción y localización práctica</h3>
-            <p>Ruta introductoria para entender tono, lector, glosario, web, app y revisión documental.</p>
-            <div class="card-actions"><a href="cursos.html#courses">Ver curso</a>
-                <a href="portfolio/scriptorium-course-catalog.pdf">Catálogo PDF</a></div>
-          </article>
-          <article>
-            <img src="assets/course-card-ancient-languages.png" alt="Curso de introducción a lenguas antiguas" />
-            <span>Mini curso</span>
-            <h3>Introducción a lenguas antiguas</h3>
-            <p>Latín, griego, hebreo, transliteración, lectura de muestra y notas de contexto.</p>
-            <div class="card-actions"><a href="cursos.html#ancient-course">Ver curso</a>
-                <a href="portfolio/scriptorium-ancient-languages-sample-lesson.pdf">Lección demo</a></div>
-          </article>
-          <article>
-            <img src="assets/course-card-pedagogical-shop.png" alt="Tienda de documentos pedagógicos" />
-            <span>Tienda</span>
-            <h3>Documentos pedagógicos</h3>
-            <p>Fichas, guías, glosarios, plantillas y materiales editables para estudiar o enseñar.</p>
-            <div class="card-actions"><a href="cursos.html#store">Ver tienda</a>
-                <a href="portfolio/scriptorium-pedagogical-store-catalog.pdf">Catálogo PDF</a></div>
-          </article>
-          <article>
-            <img src="assets/teach-localization.png" alt="Taller de localización para marcas pequeñas" />
-            <span>Taller</span>
-            <h3>Localización para marcas pequeñas</h3>
-            <p>Cómo cambia una web, app o ficha de producto al pasar a otra cultura.</p>
-            <div class="card-actions"><a href="portfolio/teaching-localization-small-brands.pdf">Demo PDF</a>
-                <a href="cursos.html">Solicitar clase</a></div>
-          </article>
-        </div>
-        <p class="info-gallery-title">Visual notes &mdash; tap any infographic to view full size</p>
-        <div class="info-gallery">
-          <figure>
-            <a href="assets/info-six-layers.png" target="_blank" rel="noopener"><img src="assets/info-six-layers.png" alt="The six layers of translation infographic" loading="lazy" /></a>
-            <figcaption>The Six Layers of Translation</figcaption>
-          </figure>
-          <figure>
-            <a href="assets/info-reading-direction.png" target="_blank" rel="noopener"><img src="assets/info-reading-direction.png" alt="Reading direction around the world infographic" loading="lazy" /></a>
-            <figcaption>Reading Direction</figcaption>
-          </figure>
-          <figure>
-            <a href="assets/info-translation-workflow.png" target="_blank" rel="noopener"><img src="assets/info-translation-workflow.png" alt="The translation workflow in five steps infographic" loading="lazy" /></a>
-            <figcaption>The Translation Workflow</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="section script-explorer-section" id="script-explorer">
-        <div class="section-heading centered">
-          <p class="eyebrow">Explorador de escrituras</p>
-          <h2>Lenguas antiguas sin espectáculo: contexto, muestra y límite profesional.</h2>
-          <p>
-            El visitante puede explorar cómo se presentaría una muestra breve. La intención
-            es educativa y documental: separar escritura, transliteración, traducción y nota
-            antes de convertirlo en servicio.
-          </p>
-        </div>
-        <div class="script-console reveal">
-          <div class="script-buttons" role="tablist" aria-label="Escrituras históricas">
-            <button class="script-button active" type="button" data-script="latin">Latín</button>
-            <button class="script-button" type="button" data-script="greek">Griego</button>
-            <button class="script-button" type="button" data-script="hebrew">Hebreo</button>
-            <button class="script-button" type="button" data-script="arabic">Árabe clásico</button>
-            <button class="script-button" type="button" data-script="sanskrit">Sánscrito</button>
-            <button class="script-button" type="button" data-script="runic">Rúnico</button>
-          </div>
-          <div class="script-panel" id="script-panel" aria-live="polite">
-            <span class="script-mark">LAT</span>
-            <div>
-              <h3>Latín</h3>
-              <p>Útil para frases, inscripciones breves, citas académicas y notas de lectura con traducción educativa.</p>
-              <strong>Entrega sugerida: original, transliteración si aplica, traducción de muestra y nota de contexto.</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section use-cases-section" id="use-cases">
-        <div class="section-heading centered">
-          <p class="eyebrow">Solicitudes habituales</p>
-          <h2>Trabajos que pueden cotizarse.</h2>
-          <p>
-            Algunos proyectos llegan como documentos completos; otros empiezan con un
-            fragmento, un enlace, una captura o una descripción del objetivo.
-          </p>
-        </div>
-        <div class="use-case-grid">
-          <article>
-            <span>01</span>
-            <h3>Tesis, artículo o resumen académico</h3>
-            <p>Se revisa el objetivo académico, el resumen, la terminología, el registro y el formato de entrega.</p>
-            <a href="#contact">Solicitar revisión</a>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Web o aplicación en otro idioma</h3>
-            <p>Se adapta mensaje, tono, llamadas a la acción, SEO básico y experiencia de lectura para usuarios reales.</p>
-            <a href="#contact">Cotizar localización</a>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Texto antiguo o inscripción breve</h3>
-            <p>Se puede preparar transliteración, traducción de muestra, notas de contexto y explicación educativa.</p>
-            <a href="#ancient">Ver enfoque antiguo</a>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Publicación bilingüe</h3>
-            <p>Se estructura una publicación breve con versión bilingüe, glosario, diseño documental y archivo PDF.</p>
-            <a href="#publications">Ver publicaciones</a>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Contratación por Fiverr</h3>
-            <p>Se ordena el alcance, los límites, las entregas y el mensaje inicial para llevarlo directo al chat.</p>
-            <a href="https://www.fiverr.com/s/Zm7Bjza">Abrir Fiverr</a>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>Acuerdo previo de servicio</h3>
-            <p>Se prepara un alcance base con confidencialidad, revisiones, entregables y condiciones de uso del material.</p>
-            <a href="#contracts">Ver contratos</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section resources-section" id="resources">
-        <div class="section-heading centered">
-          <p class="eyebrow">Recursos</p>
-          <h2>Guías breves para preparar una solicitud.</h2>
-          <p>
-            Material práctico para ordenar archivos, objetivos, idiomas y condiciones antes
-            de solicitar una cotización.
-          </p>
-        </div>
-        <div class="resource-grid">
-          <article>
-            <span>Guía</span>
-            <h3>Cómo preparar un documento para traducción</h3>
-            <p>Incluye idioma origen, idioma destino, formato editable, fecha deseada, público y notas de terminología.</p>
-          </article>
-          <article>
-            <span>Guía</span>
-            <h3>Traducción vs localización</h3>
-            <p>La traducción conserva significado; la localización adapta uso, tono, interfaz y contexto cultural.</p>
-          </article>
-          <article>
-            <span>Checklist</span>
-            <h3>Qué enviar para recibir una buena cotización</h3>
-            <p>Archivo, extensión, idiomas, objetivo, urgencia, formato final y nivel de confidencialidad.</p>
-          </article>
-          <article>
-            <span>Nota</span>
-            <h3>Cómo trabajamos textos antiguos</h3>
-            <p>Separando traducción de muestra, transliteración, notas gramaticales, contexto y explicación educativa.</p>
-          </article>
-          <article>
-            <span>Artículo</span>
-            <h3>Errores comunes al traducir textos académicos</h3>
-            <p>Terminología inconsistente, tono demasiado literal, citas mal preservadas y falta de objetivo editorial.</p>
-          </article>
-          <article>
-            <span>Plantilla</span>
-            <h3>Brief de servicio lingüístico</h3>
-            <p>Un esquema base para reunir alcance, entregables, revisión, confidencialidad y fecha de entrega.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section project-profile-section" id="project-profile">
-        <div class="section-heading centered">
-          <p class="eyebrow">Perfilador de proyecto</p>
-          <h2>Una interacción simple para preparar mejor la cotización.</h2>
-          <p>
-            No calcula precios públicos. Ayuda al cliente a entender qué información debe
-            enviar y qué tipo de entrega puede esperar según servicio, extensión y urgencia.
-          </p>
-        </div>
-        <div class="profile-estimator reveal">
-          <div class="profile-controls">
-            <label>Servicio
-              <select id="profile-service">
-                <option value="translation">Traducción documental</option>
-                <option value="localization">Localización web/app</option>
-                <option value="academic">Académico o investigación</option>
-                <option value="ancient">Lengua antigua o transliteración</option>
-                <option value="social">Publicación o marca</option>
-              </select>
-            </label>
-            <label>Extensión aproximada
-              <input id="profile-words" type="number" min="0" step="100" value="1200" />
-            </label>
-            <label>Urgencia
-              <select id="profile-urgency">
-                <option value="flexible">Flexible</option>
-                <option value="normal">Normal</option>
-                <option value="urgent">Urgente</option>
-              </select>
-            </label>
-          </div>
-          <div class="profile-output" id="profile-output" aria-live="polite"></div>
-        </div>
-      </section>
-
-      <section class="section social-launch-section" id="social-launch">
-        <div class="section-heading centered">
-          <p class="eyebrow">Publicaciones para redes</p>
-          <h2>Facebook e Instagram deben educar, no solo mostrar el logo.</h2>
-          <p>
-            Estas piezas ya funcionan como posts: tienen idea, texto, enfoque comercial y
-            una razón para que el cliente guarde, comparta o escriba por cotización.
-          </p>
-        </div>
-        <div class="social-post-grid">
-          <article class="social-card reveal">
-            <img src="assets/post-translation-localization.png" alt="Post sobre traducción profesional y localización" loading="lazy" />
-            <div>
-              <span>Post 01</span>
-              <h3>Traducir no es copiar palabras</h3>
-              <p>Caption sugerido: “Si tu web, tesis o documento va a otro idioma, primero define lector, tono, formato y objetivo.”</p>
-              <a href="assets/post-translation-localization.png" download>Descargar post</a>
-            </div>
-          </article>
-          <article class="social-card reveal">
-            <img src="assets/post-ancient-languages.png" alt="Post sobre lectura de textos antiguos con contexto" loading="lazy" />
-            <div>
-              <span>Post 02</span>
-              <h3>Leer un texto antiguo exige contexto</h3>
-              <p>Caption sugerido: “Original, transliteración, traducción y nota cultural no son lo mismo. Separarlos evita errores.”</p>
-              <a href="assets/post-ancient-languages.png" download>Descargar post</a>
-            </div>
-          </article>
-          <article class="social-card reveal">
-            <img src="assets/post-course-launch.png" alt="Post sobre cursos y materiales pedagógicos" loading="lazy" />
-            <div>
-              <span>Post 03</span>
-              <h3>Cursos y materiales</h3>
-              <p>Caption sugerido: “Clases, mini cursos y documentos descargables para aprender con ejemplos reales.”</p>
-              <a href="assets/post-course-launch.png" download>Descargar post</a>
-            </div>
-          </article>
-          <article class="social-card reveal">
-            <img src="assets/post-translation-brief.png" alt="Post sobre brief de traducción" loading="lazy" />
-            <div>
-              <span>Post 04</span>
-              <h3>Un buen brief ahorra errores</h3>
-              <p>Caption sugerido: “Antes de cotizar, prepara idioma origen, destino, extensión, formato, fecha y uso final.”</p>
-              <a href="assets/post-translation-brief.png" download>Descargar post</a>
-            </div>
-          </article>
-        </div>
-        <div class="launch-files">
-          <a href="assets/social-facebook-cover.png" download>Portada Facebook</a>
-          <a href="assets/social-instagram-story.png" download>Story vertical</a>
-          <a href="portfolio/scriptorium-social-launch-kit.pdf">Calendario social PDF</a>
-          <a href="portfolio/scriptorium-social-launch-kit.docx">Editar kit social</a>
-        </div>
-      </section>
-
-      <section class="section brand-kit-section" id="brand-kit">
-        <div class="section-heading centered">
-          <p class="eyebrow">Kit de marca</p>
-          <h2>Archivos base de identidad.</h2>
-          <p>
-            Recursos visuales para perfiles, documentos de propuesta, presentaciones y
-            publicación con dominio propio.
-          </p>
-        </div>
-        <div class="brand-kit-grid">
-          <a href="assets/logo-horizontal.png"><span>Logo horizontal</span><strong>PNG</strong></a>
-          <a href="assets/logo-icon.png"><span>Icono</span><strong>PNG</strong></a>
-          <a href="assets/favicon.png"><span>Favicon</span><strong>PNG</strong></a>
-          <a href="assets/scriptorium-wordmark.svg"><span>Wordmark</span><strong>SVG</strong></a>
-          <a href="assets/social-facebook-cover.png"><span>Portada Facebook</span><strong>PNG</strong></a>
-          <a href="portfolio/scriptorium-philology-brand-deck.pptx"><span>Presentación</span><strong>PPTX</strong></a>
-        </div>
-      </section>
-
-      <section class="section prep-section" id="before-send">
-        <div class="section-heading centered">
-          <p class="eyebrow">Antes de enviar tu archivo</p>
-          <h2>Información necesaria para cotizar.</h2>
-          <p>
-            Enviar estos datos desde el inicio facilita una respuesta precisa y evita
-            compartir material sensible antes de acordar condiciones.
-          </p>
-        </div>
-        <div class="prep-grid">
-          <article><span>01</span><h3>No envíes datos sensibles sin acuerdo</h3><p>Primero confirma confidencialidad, uso del material y canal de entrega.</p></article>
-          <article><span>02</span><h3>Indica idioma origen y destino</h3><p>Ejemplo: español a inglés, inglés a español, latín con explicación en español.</p></article>
-          <article><span>03</span><h3>Comparte formato editable si puedes</h3><p>Word, Google Docs, Excel o texto exportable suelen cotizarse con más precisión que imágenes.</p></article>
-          <article><span>04</span><h3>Define objetivo y público</h3><p>No es igual traducir para tesis, web, contrato, campaña, clase o publicación.</p></article>
-          <article><span>05</span><h3>Separa urgencia de calidad</h3><p>Una entrega urgente puede requerir otro alcance, revisión más limitada o nueva cotización.</p></article>
-          <article><span>06</span><h3>Adjunta muestra o fragmento</h3><p>Un fragmento breve permite evaluar tono, dificultad, terminología y formato sin exponer todo.</p></article>
-        </div>
-      </section>
-
-      <section class="section portfolio-section" id="portfolio">
-        <div class="portfolio-head">
-          <div class="section-heading">
-            <p class="eyebrow">Biblioteca de portafolio</p>
-            <h2>Documentos de referencia y muestras de trabajo.</h2>
-            <p>
-              Archivos preparados para revisar estilo, estructura, formato, tratamiento
-              terminológico y límites profesionales antes de solicitar una cotización.
-            </p>
-          </div>
-          <div class="library-stamp">
-            <strong>Archivo documental</strong>
-            <span>Traducción, localización, investigación, documentación académica y lenguas antiguas.</span>
-          </div>
-        </div>
-
-        <div class="filter-bar" aria-label="Portfolio filters">
-          <button class="filter-button active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="academic">Academic</button>
-          <button class="filter-button" type="button" data-filter="medical">Medical</button>
-          <button class="filter-button" type="button" data-filter="localization">Localization</button>
-          <button class="filter-button" type="button" data-filter="branding">Branding</button>
-          <button class="filter-button" type="button" data-filter="legal">Contracts</button>
-          <button class="filter-button" type="button" data-filter="historical">Ancient</button>
-        </div>
-
-        <div class="dossier-desk">
-          <article class="dossier-card">
-            <img src="assets/scriptorium-philology-profile-preview.png" alt="Perfil de estudio filológico de Scriptorium" />
-            <div class="dossier-body">
-              <span class="tag">Nuevo</span>
-              <h3>Perfil de estudio filológico aplicado</h3>
-              <p>
-                Documento comercial para explicar el enfoque de Scriptorium, sus límites
-                profesionales, servicios por cotización y uso correcto de muestras.
-              </p>
-              <ul class="dossier-points">
-                <li>Posicionamiento profesional.</li>
-                <li>Lenguaje menos genérico y más editorial.</li>
-                <li>PDF y DOCX disponibles.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-philology-studio-profile.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-philology-studio-profile.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-method-guide-preview.png" alt="Guía de método filológico aplicado" />
-            <div class="dossier-body">
-              <span class="tag">Nuevo</span>
-              <h3>Guía de método filológico aplicado</h3>
-              <p>
-                Guía breve para mostrar cómo se separan texto, forma, lengua, contexto y
-                entrega antes de traducir, localizar o publicar.
-              </p>
-              <ul class="dossier-points">
-                <li>Marco de trabajo por capas.</li>
-                <li>Útil para explicar cotizaciones.</li>
-                <li>Formato editable.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-applied-philology-method-guide.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-applied-philology-method-guide.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-social-kit-preview.png" alt="Kit de lanzamiento social de Scriptorium" />
-            <div class="dossier-body">
-              <span class="tag">Nuevo</span>
-              <h3>Kit de lanzamiento social</h3>
-              <p>
-                Bio sugerida, secuencia de publicaciones iniciales y tono recomendado para
-                crear Facebook e Instagram con coherencia de marca.
-              </p>
-              <ul class="dossier-points">
-                <li>Bio lista para redes.</li>
-                <li>Primeras cinco publicaciones.</li>
-                <li>Incluye visuales descargables.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-social-launch-kit.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-social-launch-kit.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-service-brief-template-preview.png" alt="Plantilla de brief de servicio lingüístico" />
-            <div class="dossier-body">
-              <span class="tag">Plantilla</span>
-              <h3>Brief de servicio lingüístico</h3>
-              <p>
-                Plantilla editable para que el cliente envíe idioma origen, idioma destino,
-                formato, urgencia, uso final y nivel de confidencialidad.
-              </p>
-              <ul class="dossier-points">
-                <li>Campos listos para cotizar.</li>
-                <li>Evita solicitudes incompletas.</li>
-                <li>DOCX editable.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-service-brief-template.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-service-brief-template.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-language-access-brief-preview.png" alt="Language access research brief preview" />
-            <div class="dossier-body">
-              <span class="tag">Referencia</span>
-              <h3>Language Access and Digital Trust</h3>
-              <p>
-                Brief de investigación con extracto multilingüe para servicios digitales,
-                onboarding, información pública y comunicación sensible.
-              </p>
-              <ul class="dossier-points">
-                <li>Incluye 12 idiomas modernos.</li>
-                <li>Enfoque en claridad, confianza y alcance.</li>
-                <li>PDF y DOCX disponibles.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-language-access-brief.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-language-access-brief.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-academic-abstract-pack-preview.png" alt="Academic abstract and terminology pack preview" />
-            <div class="dossier-body">
-              <span class="tag">Referencia</span>
-              <h3>Academic Abstract and Terminology Pack</h3>
-              <p>
-                Paquete académico con resumen, adaptación al español, glosario y notas
-                editoriales para investigación, tesis y publicación.
-              </p>
-              <ul class="dossier-points">
-                <li>Control terminológico.</li>
-                <li>Estilo académico sobrio.</li>
-                <li>Cotizable por alcance.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-academic-abstract-pack.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-academic-abstract-pack.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-classical-annotation-pack-preview.png" alt="Classical annotation and transliteration pack preview" />
-            <div class="dossier-body">
-              <span class="tag">Referencia</span>
-              <h3>Classical Annotation and Transliteration Pack</h3>
-              <p>
-                Documento educativo con original, transliteración, nota cultural y límites
-                profesionales para lenguas antiguas.
-              </p>
-              <ul class="dossier-points">
-                <li>Latín, griego, hebreo, árabe, sánscrito y rúnico.</li>
-                <li>Anotación separada de interpretación.</li>
-                <li>Uso educativo, no certificado.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-classical-annotation-pack.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-classical-annotation-pack.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-localization-ui-pack-preview.png" alt="Website and app localization pack preview" />
-            <div class="dossier-body">
-              <span class="tag">Muestra comercial</span>
-              <h3>Website and App Localization Pack</h3>
-              <p>
-                Muestra de localización para landing pages, pantallas de app, microcopy,
-                SEO básico y experiencia de usuario multilingüe.
-              </p>
-              <ul class="dossier-points">
-                <li>Copy web y app con notas de adaptación.</li>
-                <li>Variables reales de cotización por pantalla/string.</li>
-                <li>PDF + DOCX descargables.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-localization-ui-pack.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-localization-ui-pack.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-brand-transcreation-pack-preview.png" alt="Brand voice and transcreation pack preview" />
-            <div class="dossier-body">
-              <span class="tag">Muestra comercial</span>
-              <h3>Brand Voice and Transcreation Pack</h3>
-              <p>
-                Muestra de transcreación para voz de marca, campañas, naming, tono bilingüe
-                y líneas comerciales adaptadas.
-              </p>
-              <ul class="dossier-points">
-                <li>Principios de voz y ejemplos bilingües.</li>
-                <li>Útil para marcas, Fiverr y campañas.</li>
-                <li>Cotización por opciones y rondas.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-brand-transcreation-pack.pdf">Ver PDF</a>
-                <a href="portfolio/scriptorium-brand-transcreation-pack.docx">Descargar DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="dossier-card">
-            <img src="assets/scriptorium-research-dossier-preview.png" alt="Research translation dossier preview" />
-            <div class="dossier-body">
-              <span class="tag">Dossier profesional</span>
-              <h3>Investigación y traducción multilingüe</h3>
-              <p>
-                Dossier editorial con resumen, terminología, fragmentos traducidos y control de calidad.
-              </p>
-              <ul class="dossier-points">
-                <li>Incluye EN, ES, DE, FR, PT, IT y control CJK/RTL.</li>
-                <li>Formato PDF limpio con portada, metadatos y notas de alcance.</li>
-                <li>Útil para propuestas académicas, institucionales y de servicio.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-research-dossier.pdf">Descargar PDF</a>
-              </div>
-              <details class="pdf-preview">
-                <summary>Desplegar vista previa</summary>
-                <iframe title="Research translation dossier preview" src="portfolio/scriptorium-research-dossier.pdf#toolbar=0&navpanes=0"></iframe>
-              </details>
-            </div>
-          </article>
-
-          <article class="dossier-card">
-            <img src="assets/scriptorium-ancient-language-dossier-preview.png" alt="Ancient language annotation dossier preview" />
-            <div class="dossier-body">
-              <span class="tag">Dossier profesional</span>
-              <h3>Lenguas antiguas y anotación</h3>
-              <p>
-                Documento de referencia para transliteración, comentario cultural y notas de incertidumbre.
-              </p>
-              <ul class="dossier-points">
-                <li>Presenta método editorial para latín, griego, hebreo bíblico y sánscrito.</li>
-                <li>Separa texto, transliteración, traducción y nota de trabajo.</li>
-                <li>Define límites educativos y no certificados con claridad.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-ancient-language-dossier.pdf">Descargar PDF</a>
-              </div>
-              <details class="pdf-preview">
-                <summary>Desplegar vista previa</summary>
-                <iframe title="Ancient language annotation dossier preview" src="portfolio/scriptorium-ancient-language-dossier.pdf#toolbar=0&navpanes=0"></iframe>
-              </details>
-            </div>
-          </article>
-
-          <article class="dossier-card">
-            <img src="assets/scriptorium-service-agreement-dossier-preview.png" alt="Service agreement dossier preview" />
-            <div class="dossier-body">
-              <span class="tag">Dossier profesional</span>
-              <h3>Contrato y alcance de servicio</h3>
-              <p>
-                Modelo de acuerdo para cotizaciones, confidencialidad, entregables y revisiones.
-                Establece condiciones de trabajo antes de recibir o preparar archivos.
-              </p>
-              <ul class="dossier-points">
-                <li>Checklist de idioma origen, idioma destino, formato y fecha.</li>
-                <li>Incluye límites profesionales y reglas de revisión.</li>
-                <li>Sirve como base para contratación por correo, WhatsApp o Fiverr.</li>
-              </ul>
-              <div class="card-actions">
-                <a href="portfolio/scriptorium-service-agreement-dossier.pdf">Descargar PDF</a>
-              </div>
-              <details class="pdf-preview">
-                <summary>Desplegar vista previa</summary>
-                <iframe title="Service agreement dossier preview" src="portfolio/scriptorium-service-agreement-dossier.pdf#toolbar=0&navpanes=0"></iframe>
-              </details>
-            </div>
-          </article>
-        </div>
-
-        <div class="portfolio-grid">
-          <article class="portfolio-card" data-category="academic">
-            <img src="assets/academic-overview.png" alt="Academic research article sample cover" />
-            <div>
-              <span class="tag">Academic & Research</span>
-              <h3>Academic Research Article</h3>
-              <p><strong>Field:</strong> Psychology / Social Science</p>
-              <p><strong>Languages:</strong> EN, ES, DE, FR, PT, Chinese, Arabic</p>
-              <p>Research sample with terminology control and multilingual presentation.</p>
-              <div class="card-actions">
-                <a href="portfolio/academic-research-article.pdf">View PDF</a>
-                <a href="portfolio/academic-research-article.docx">Download DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="academic">
-            <img src="assets/thesis-overview.png" alt="Thesis chapter translation sample cover" />
-            <div>
-              <span class="tag">Academic & Research</span>
-              <h3>Thesis Chapter Translation</h3>
-              <p><strong>Field:</strong> Thesis documentation</p>
-              <p><strong>Languages:</strong> EN to ES plus multiscript sample set</p>
-              <p>Chapter translation with headings, academic tone and preserved structure.</p>
-              <div class="card-actions"><a href="portfolio/thesis-chapter.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="academic">
-            <img src="assets/thesis-sample.png" alt="Literature review sample page" />
-            <div>
-              <span class="tag">Academic & Research</span>
-              <h3>Literature Review Sample</h3>
-              <p><strong>Field:</strong> Research synthesis</p>
-              <p><strong>Languages:</strong> 12-language multiscript sample</p>
-              <p>Structured review language for academic sources, summaries and scholarly tone.</p>
-              <div class="card-actions"><a href="portfolio/literature-review.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="academic">
-            <img src="assets/academic-sample.png" alt="Research proposal sample page" />
-            <div>
-              <span class="tag">Academic & Research</span>
-              <h3>Research Proposal Translation</h3>
-              <p><strong>Field:</strong> Proposal / methodology</p>
-              <p><strong>Languages:</strong> 5-language full translation sample</p>
-              <p>Proposal structure with objectives, methods and research register preserved.</p>
-              <div class="card-actions"><a href="portfolio/research-proposal.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="medical">
-            <img src="assets/medical-academic.png" alt="Medical-academic review sample cover" />
-            <div>
-              <span class="tag">Medical & Psychology</span>
-              <h3>Medical-Academic Review</h3>
-              <p><strong>Field:</strong> Health / psychology documentation</p>
-              <p><strong>Languages:</strong> Multilingual sample set</p>
-              <p>Medical-academic wording sample for structure and terminology precision.</p>
-              <div class="card-actions"><a href="portfolio/medical-academic-review.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="medical">
-            <img src="assets/ethics-committee.png" alt="Ethics committee submission sample cover" />
-            <div>
-              <span class="tag">Medical & Academic</span>
-              <h3>Ethics Committee Submission</h3>
-              <p><strong>Field:</strong> Research ethics documentation</p>
-              <p><strong>Languages:</strong> 12-language multiscript sample</p>
-              <p>Formal language for submissions, participant notes and institutional review contexts.</p>
-              <div class="card-actions"><a href="portfolio/ethics-committee.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="localization">
-            <img src="assets/localization-overview.png" alt="Localization portfolio sample cover" />
-            <div>
-              <span class="tag">Localization</span>
-              <h3>App Localization Sample</h3>
-              <p><strong>Field:</strong> Software / product experience</p>
-              <p><strong>Languages:</strong> 12-language multiscript sample</p>
-              <p>UI and product-language sample with layout and script-direction awareness.</p>
-              <div class="card-actions">
-                <a href="portfolio/app-localization-sample.pdf">View PDF</a>
-                <a href="portfolio/app-localization-sample.docx">Download DOCX</a>
-              </div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="branding">
-            <img src="assets/branding-overview.png" alt="Branding transcreation portfolio cover" />
-            <div>
-              <span class="tag">Branding & Transcreation</span>
-              <h3>Brand Naming Report</h3>
-              <p><strong>Field:</strong> Brand language</p>
-              <p><strong>Languages:</strong> EN, ES, FR, DE, PT, IT</p>
-              <p>Framework for name screening, cultural fit and voice options.</p>
-              <div class="card-actions"><a href="portfolio/brand-naming-report.pdf">View PDF</a>
-                <a href="portfolio/brand-naming-report.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="branding">
-            <img src="assets/transcreation-sample.png" alt="Transcreation portfolio sample page" />
-            <div>
-              <span class="tag">Branding & Transcreation</span>
-              <h3>Campaign Transcreation Sample</h3>
-              <p><strong>Field:</strong> Marketing language</p>
-              <p><strong>Languages:</strong> EN, ES, FR, DE, PT, IT</p>
-              <p>Persuasive copy adapted by intent, audience and brand voice.</p>
-              <div class="card-actions"><a href="portfolio/campaign-transcreation-sample.pdf">View PDF</a>
-                <a href="portfolio/campaign-transcreation-sample.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="legal">
-            <img src="assets/service-agreement.png" alt="Translation service agreement template cover" />
-            <div>
-              <span class="tag">Service Contracts</span>
-              <h3>Translation Service Agreement</h3>
-              <p><strong>Field:</strong> Client service terms</p>
-              <p><strong>Languages:</strong> EN / ES</p>
-              <p>Bilingual template for scope, deliverables, revisions and confidentiality.</p>
-              <div class="card-actions"><a href="portfolio/translation-service-agreement.pdf">View PDF</a>
-                <a href="portfolio/translation-service-agreement.docx">Download DOCX</a></div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-category="historical">
-            <img src="assets/ancient-scripts.png" alt="Ancient scripts annotated samples cover" />
-            <div>
-              <span class="tag">Ancient & Historical Scripts</span>
-              <h3>Latin / Greek / Runic Annotated Samples</h3>
-              <p><strong>Field:</strong> Historical language study</p>
-              <p><strong>Languages:</strong> Latin, Greek, Hebrew, Arabic, Sanskrit, Old Norse</p>
-              <p>Annotated samples with original text, transliteration and educational notes.</p>
-              <div class="card-actions"><a href="portfolio/ancient-scripts-annotated-samples.pdf">View PDF</a>
-                <a href="portfolio/ancient-scripts-annotated-samples.docx">Download DOCX</a></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section about-section" id="about">
+      <section class="section about-section" id="about" aria-labelledby="about-title">
         <div class="about-card">
-          <img src="assets/founder-josue.jpg" alt="Josue Puglla, fundador de Scriptorium" />
+          <img src="assets/founder-josue.jpg" alt="Josue Puglla, fundador de Scriptorium" loading="lazy" />
           <div>
-            <p class="eyebrow">Fundador y dirección lingüística</p>
-            <h2>Josue Puglla, fundador de Scriptorium.</h2>
-            <p>
-              Josue Puglla dirige Scriptorium como un estudio de idiomas y documentación
-              orientado a proyectos que requieren precisión, estructura y criterio cultural.
-              Su perfil combina formación en psicología, lectura académica, interés por
-              lenguas modernas e históricas, diseño documental y trabajo por alcance.
-            </p>
-            <p>
-              El estudio prepara traducciones, publicaciones, materiales educativos,
-              documentos de alcance y recursos de lenguas antiguas con entregables definidos
-              antes de iniciar.
-            </p>
-            <div class="about-points">
-              <span>Traducción</span>
-              <span>Lenguas históricas</span>
-              <span>Documentación</span>
-              <span>Material educativo</span>
-              <span>Solo cotización</span>
-            </div>
+            <p class="eyebrow">Dirección del estudio</p>
+            <h2 id="about-title">Josue Puglla, fundador de Scriptorium.</h2>
+            <p>Scriptorium es un estudio independiente en desarrollo, orientado a proyectos que requieren lectura académica, criterio documental y atención al contexto. Cada servicio se acepta según la experiencia disponible y el nivel de revisión que pueda garantizarse.</p>
+            <p>La formación en psicología aporta familiaridad con escritura académica y documentación de investigación; no equivale a una titulación en traducción, filología ni lenguas clásicas. Cuando un proyecto exige acreditación o especialidad externa, debe derivarse o trabajarse con un colaborador cualificado.</p>
+            <div class="about-points"><span>Gestión por alcance</span><span>Revisión documentada</span><span>Confidencialidad</span><span>Límites explícitos</span></div>
           </div>
         </div>
       </section>
 
-      <section class="section ethics-section" id="legal">
-        <div class="section-heading centered">
-          <p class="eyebrow">Límites profesionales</p>
-          <h2>Lenguaje claro, límites claros.</h2>
-          <p>Scriptorium presenta servicios lingüísticos serios sin hacer promesas que requieren certificación externa.</p>
-        </div>
-        <div class="ethics-grid">
-          <article><span>01</span><p>Los documentos del portafolio son referencias originales o anónimas; no representan clientes reales salvo indicación expresa.</p></article>
-          <article><span>02</span><p>El trabajo con lenguas antiguas se ofrece como estudio, anotación, transliteración o muestra educativa.</p></article>
-          <article><span>03</span><p>Los documentos médicos o psicológicos son trabajo lingüístico/documental, no consejo clínico.</p></article>
-          <article><span>04</span><p>Los documentos legales y empresariales son servicios de idioma, no asesoría legal ni traducción juramentada.</p></article>
-          <article><span>05</span><p>Los documentos confidenciales requieren acuerdo antes de subirlos o compartirlos.</p></article>
-          <article><span>06</span><p>Todo servicio se maneja por cotización según alcance, idioma, formato, urgencia y revisión.</p></article>
-        </div>
-      </section>
-
-      <section class="section legal-section">
-        <div class="section-heading centered">
-          <p class="eyebrow">Términos básicos</p>
-          <h2>Condiciones claras para trabajar con confianza.</h2>
-          <p>
-            Estos textos son una base profesional para orientar el servicio. Pueden ajustarse
-            cuando exista dominio propio, pasarela de pago o formularios con carga de archivos.
-            El dominio propio está previsto como siguiente etapa de publicación.
-          </p>
-        </div>
-        <div class="legal-grid">
-          <article>
-            <span>01</span>
-            <h3>Alcance del servicio</h3>
-            <p>
-              Scriptorium presta servicios de traducción, localización, edición, documentación,
-              publicaciones, materiales educativos y anotación de textos antiguos según el alcance
-              acordado por escrito antes de iniciar cada proyecto.
-            </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Confidencialidad</h3>
-            <p>
-              Los documentos compartidos por clientes se tratan de forma reservada. No se recomienda
-              enviar información médica, legal, académica o personal sensible sin acuerdo previo de
-              confidencialidad y definición clara del uso del material.
-            </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Privacidad y contacto</h3>
-            <p>
-              Los datos enviados por correo, WhatsApp o Fiverr se usan únicamente para responder
-              solicitudes, preparar cotizaciones y coordinar entregas. Scriptorium no vende datos
-              personales ni los utiliza para fines ajenos al servicio solicitado.
-            </p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Límites profesionales</h3>
-            <p>
-              Scriptorium no ofrece traducción juramentada, asesoría legal, diagnóstico médico ni
-              garantía de aceptación académica o editorial. El trabajo es lingüístico, documental,
-              educativo y de apoyo editorial.
-            </p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>Muestras e investigaciones</h3>
-            <p>
-              Los documentos publicados sirven como referencias de estilo, formato y tratamiento
-              lingüístico. Cualquier material nuevo debe proteger archivos privados y citar fuentes
-              cuando corresponda.
-            </p>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>Revisiones y entregas</h3>
-            <p>
-              Cada cotización debe indicar idioma origen, idioma destino, extensión, formato, fecha de
-              entrega y rondas de revisión. Cambios fuera del alcance inicial pueden requerir nueva
-              cotización.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section faq-section" id="faq">
-        <div class="section-heading centered">
-          <p class="eyebrow">Preguntas frecuentes</p>
-          <h2>Respuestas rápidas antes de solicitar un servicio.</h2>
-          <p>
-            Esta sección reduce dudas iniciales y ayuda a que la primera conversación por
-            WhatsApp, correo o Fiverr llegue con mejor contexto.
-          </p>
-        </div>
+      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading centered"><p class="eyebrow">Antes de solicitar</p><h2 id="faq-title">Respuestas breves a decisiones importantes.</h2></div>
         <div class="faq-grid">
-          <details open>
-            <summary>¿Qué idiomas trabaja Scriptorium?</summary>
-            <p>El sitio organiza los idiomas por nivel de servicio: idiomas modernos de trabajo, idiomas extendidos bajo revisión y lenguas antiguas para anotación, estudio o documentación educativa.</p>
-          </details>
-          <details>
-            <summary>¿Puedo enviar documentos confidenciales?</summary>
-            <p>Sí, pero primero conviene definir alcance, uso del material y condiciones de confidencialidad. No se recomienda enviar información sensible sin acuerdo previo.</p>
-          </details>
-          <details>
-            <summary>¿Hacen traducción juramentada?</summary>
-            <p>No. Scriptorium ofrece traducción, localización, documentación y apoyo editorial, pero no certificación juramentada ni asesoría legal.</p>
-          </details>
-          <details>
-            <summary>¿Cuánto tarda una cotización?</summary>
-            <p>Depende del tipo de archivo, extensión, idioma y urgencia. Una buena solicitud debe incluir idioma origen, idioma destino, número aproximado de palabras, fecha deseada y objetivo del texto.</p>
-          </details>
-          <details>
-            <summary>¿El servicio incluye revisiones?</summary>
-            <p>Las revisiones se definen en la cotización. Cambios dentro del alcance acordado pueden revisarse; cambios nuevos o ampliaciones pueden requerir una cotización adicional.</p>
-          </details>
-          <details>
-            <summary>¿Puedo pedir una muestra?</summary>
-            <p>Sí. Para proyectos largos o especializados se puede solicitar una muestra breve, un glosario inicial o una nota de estilo antes de avanzar con el documento completo.</p>
-          </details>
+          <details><summary>¿Scriptorium traduce cualquier idioma?</summary><p>No. Español e inglés son la ruta inicial. Otros pares se confirman únicamente después de revisar competencia, disponibilidad y necesidad de un segundo revisor.</p></details>
+          <details><summary>¿Ofrece traducción juramentada o certificada?</summary><p>No. Cuando el trámite exige traductor acreditado, firma, sello o certificación oficial, el servicio debe derivarse a un profesional habilitado.</p></details>
+          <details><summary>¿Puedo enviar una tesis o un archivo médico?</summary><p>Primero envía una descripción o un fragmento anonimizado. Los archivos sensibles solo deben compartirse después de acordar canal, finalidad, acceso y conservación.</p></details>
+          <details><summary>¿Las muestras son trabajos de clientes?</summary><p>No, salvo que una pieza lo indique de forma expresa y verificable. Las muestras actuales son demostraciones propias o escenarios ficticios identificados como tales.</p></details>
         </div>
       </section>
 
-      <section class="contact-section" id="contact">
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-copy">
-          <p class="eyebrow">Solicitar servicio</p>
-          <h2>Envía el alcance y recibe una propuesta clara.</h2>
-          <p>
-            Usa este formulario para traducción, localización, notas de lenguas antiguas,
-            apoyo editorial, materiales educativos o acuerdos de servicio.
-          </p>
-          <div class="contact-notes">
-            <span>Traducción</span><span>Contratos</span><span>Publicaciones</span><span>Textos antiguos</span><span>Enseñanza</span>
-          </div>
-          <div class="direct-contact" aria-label="Direct contact">
+          <p class="eyebrow">Solicitar evaluación</p>
+          <h2 id="contact-title">Describe el proyecto antes de compartir el archivo.</h2>
+          <p>El formulario prepara un correo en tu dispositivo; este sitio no almacena la información ni recibe adjuntos. También puedes iniciar la conversación por WhatsApp o Fiverr.</p>
+          <div class="direct-contact">
             <a href="mailto:josuepug@gmail.com">josuepug@gmail.com</a>
-            <a href="https://wa.me/593987411592">WhatsApp: +593 98 741 1592</a>
-            <a href="https://www.fiverr.com/s/Zm7Bjza">Fiverr: Scriptorium services</a>
+            <a href="https://wa.me/593987411592" target="_blank" rel="noopener">WhatsApp: +593 98 741 1592</a>
+            <a href="https://www.fiverr.com/s/Zm7Bjza" target="_blank" rel="noopener">Perfil de Fiverr</a>
           </div>
+          <p class="privacy-inline">Antes de escribir, revisa el <a href="privacidad.html">aviso de privacidad</a> y las <a href="terminos.html">condiciones del servicio</a>.</p>
         </div>
-
         <form class="quote-form" id="quote-form">
-          <label>Nombre <input name="name" required placeholder="Tu nombre" /></label>
-          <label>Contacto <input name="email" required placeholder="Correo, WhatsApp o usuario de Fiverr" /></label>
-          <div class="form-row">
-            <label>Tipo de cliente
-              <select name="clientType">
-                <option>Particular</option>
-                <option>Empresa o marca</option>
-                <option>Investigador / estudiante</option>
-                <option>Editorial / creador de contenido</option>
-                <option>Institución educativa</option>
-              </select>
-            </label>
-            <label>Urgencia
-              <select name="urgency">
-                <option>Flexible</option>
-                <option>Normal</option>
-                <option>Urgente</option>
-                <option>Fecha fija</option>
-              </select>
-            </label>
-          </div>
-          <label>Tipo de servicio
-            <select name="service">
-              <option>Traducción profesional de documentos</option>
-              <option>Localización web, app y software</option>
-              <option>Documentación académica o investigación</option>
-              <option>Notas de lenguas antiguas o transliteración</option>
-              <option>Publicación o apoyo editorial</option>
-              <option>Material educativo o guía de estudio</option>
-              <option>Acuerdo de servicio o alcance</option>
+          <label>Nombre <input name="name" autocomplete="name" required placeholder="Tu nombre" /></label>
+          <label>Contacto <input name="contact" autocomplete="email" required placeholder="Correo, WhatsApp o usuario de Fiverr" /></label>
+          <label>Servicio
+            <select name="service" required>
+              <option value="">Selecciona una opción</option><option>Traducción o edición</option><option>Localización web o app</option><option>Apoyo editorial académico</option><option>Texto histórico o transliteración</option><option>Clase o material pedagógico</option>
             </select>
           </label>
-          <div class="form-row">
-            <label>Idioma origen <input name="source" placeholder="Inglés / Latín / Griego..." /></label>
-            <label>Idioma destino <input name="target" placeholder="Español / Inglés..." /></label>
-          </div>
-          <div class="form-row">
-            <label>Número de palabras <input name="words" inputmode="numeric" placeholder="Opcional" /></label>
-            <label>Fecha de entrega <input name="deadline" placeholder="Opcional" /></label>
-          </div>
-          <div class="form-row">
-            <label>Formato del archivo
-              <select name="fileFormat">
-                <option>Word / Google Docs</option>
-                <option>PDF</option>
-                <option>Web / HTML</option>
-                <option>Excel / glosario</option>
-                <option>Imagen o escaneo</option>
-                <option>Otro formato</option>
-              </select>
-            </label>
-            <label>Nivel de revisión
-              <select name="reviewLevel">
-                <option>Traducción con revisión básica</option>
-                <option>Traducción + glosario</option>
-                <option>Localización completa</option>
-                <option>Revisión editorial</option>
-                <option>Muestra anotada</option>
-              </select>
-            </label>
-          </div>
-          <label class="checkbox-field">
-            <input type="checkbox" name="confidentiality" value="Requiere manejo confidencial" />
-            <span>Este proyecto requiere manejo confidencial antes de compartir archivos sensibles.</span>
-          </label>
-          <label>Archivo de referencia
-            <input name="attachment" type="file" />
-            <span class="field-help">GitHub Pages no recibe archivos directamente; el nombre del archivo se añadirá al mensaje y podrás enviarlo por correo, WhatsApp o Fiverr.</span>
-          </label>
-          <label>Alcance del proyecto <textarea name="message" rows="5" placeholder="Describe el documento, publicación, texto antiguo o material educativo."></textarea></label>
-          <button class="primary-button" type="submit">Preparar solicitud</button>
-          <div class="form-actions-secondary">
-            <a class="secondary-button" id="whatsapp-request-link" href="https://wa.me/593987411592" target="_blank" rel="noopener">Enviar por WhatsApp</a>
-            <a class="secondary-button" href="https://www.fiverr.com/s/Zm7Bjza" target="_blank" rel="noopener">Abrir Fiverr</a>
-          </div>
-          <p class="form-note" id="form-note">La solicitud se copiará al portapapeles cuando sea posible y también abrirá un correo preparado.</p>
+          <div class="form-row"><label>Idioma origen <input name="source" placeholder="Ej. inglés" /></label><label>Idioma destino <input name="target" placeholder="Ej. español" /></label></div>
+          <div class="form-row"><label>Extensión aproximada <input name="words" inputmode="numeric" placeholder="Palabras o páginas" /></label><label>Fecha deseada <input name="deadline" type="date" /></label></div>
+          <label>Descripción <textarea name="message" rows="5" required placeholder="Uso final, público, formato y cualquier requisito importante. No incluyas datos sensibles."></textarea></label>
+          <label class="checkbox-field"><input type="checkbox" name="privacyRead" required /><span>He leído el <a href="privacidad.html" target="_blank" rel="noopener">aviso de privacidad</a> y no estoy enviando información sensible.</span></label>
+          <button class="primary-button" type="submit">Preparar correo</button>
+          <div class="form-actions-secondary"><a class="secondary-button" id="whatsapp-request-link" href="https://wa.me/593987411592" target="_blank" rel="noopener">Preparar WhatsApp</a><a class="secondary-button" href="portfolio/scriptorium-service-brief-template.docx">Descargar brief</a></div>
+          <p class="form-note" id="form-note" aria-live="polite">El archivo se comparte después de acordar alcance y canal.</p>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <strong>Scriptorium</strong>
-        <span>Servicios lingüísticos · Textos antiguos · Publicaciones · Documentación</span>
-      </div>
-      <a href="#home">Volver arriba</a>
+      <div><strong>Scriptorium Language Studio</strong><span>Estudio independiente · Ecuador · Atención remota</span></div>
+      <nav aria-label="Información legal"><a href="privacidad.html">Privacidad</a><a href="terminos.html">Condiciones</a><a href="#home">Volver arriba</a></nav>
     </footer>
-
-    <a class="floating-whatsapp" href="https://wa.me/593987411592" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-      WhatsApp
-    </a>
-
-    <script src="translations.js?v=scriptorium-multilingual-20260630"></script>
-    <script src="script.js?v=philology-suite-20260706"></script>
+    <a class="floating-whatsapp" href="https://wa.me/593987411592" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WhatsApp</a>
+    <script src="script.js?v=audit-20260827"></script>
   </body>
 </html>
