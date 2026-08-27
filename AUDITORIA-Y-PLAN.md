@@ -50,29 +50,30 @@ La estrategia será construir confianza antes de escala. Primero se valida una o
 
 ## Plan de 90 días
 
-### Fase 1 - Fundamentos verificables (semanas 1 y 2)
+### Fase 1 - Fundamentos verificables (semanas 1 y 2, reajustada)
 
 - Solicitar búsqueda fonética de “Scriptorium” y “Scriptorium Language Studio” en SENADI.
-- Confirmar nombre legal, RUC, régimen tributario, domicilio contractual y forma de facturación con un profesional.
+- Posponer RUC, régimen tributario y facturación directa hasta la etapa previa a un checkout propio.
 - Crear matriz de competencias: idioma, nivel, tipo de servicio, evidencia, revisor disponible y límite.
 - Elegir solo tres servicios iniciales: traducción ES-EN, localización web ES-EN y edición académica lingüística.
 - Definir tarifa mínima, anticipo, número de revisiones, urgencias y plazo de respuesta.
 - Revisar legalmente privacidad, condiciones y contrato.
 
-**Salida de fase:** oferta que puede venderse y facturarse sin promesas ambiguas.
+**Salida de fase:** oferta clara que puede validarse mediante consultas, clases piloto y plataformas intermediarias.
 
-### Fase 2 - Prueba y conversión (semanas 3 a 5)
+### Fase 2 - Educación, prueba y conversión (semanas 3 a 5)
 
 - Conseguir tres proyectos piloto pagados dentro del alcance validado.
 - Documentar cada caso con permiso: problema, tamaño, proceso, entrega y resultado.
 - Sustituir muestras ficticias prioritarias por casos anonimizados o demostraciones revisadas por un segundo lingüista.
 - Preparar una página por servicio con preguntas, entregables, exclusiones y ejemplo.
+- Lanzar dos rutas educativas iniciales y tres recursos descargables terminados.
 - Configurar WhatsApp Business con catálogo, horario, respuestas rápidas y etiquetas.
 - Crear correo con dominio cuando la marca esté despejada.
 
 **Salida de fase:** tres pruebas reales y un proceso repetible de cotización a entrega.
 
-### Fase 3 - Canal y contenido (semanas 6 a 9)
+### Fase 3 - Canal y contenido educativo (semanas 6 a 9)
 
 - Abrir Facebook e Instagram con la misma identidad, bio y enlace.
 - Publicar dos piezas semanales: una educativa y una orientada a un problema de cliente.
@@ -83,7 +84,7 @@ La estrategia será construir confianza antes de escala. Primero se valida una o
 
 **Salida de fase:** canal de autoridad que genera consultas, no una galería de diseños.
 
-### Fase 4 - Productos y tienda (semanas 10 a 13)
+### Fase 4 - Productos educativos y tienda (semanas 10 a 13)
 
 - Validar tres productos digitales, no ocho a la vez.
 - Producto 1: brief editable de traducción.
@@ -126,8 +127,8 @@ No se usarán seguidores, impresiones o cantidad de idiomas como métrica princi
 
 ## Información pendiente del fundador
 
-- Nombre legal completo y forma comercial que aparecerá en contratos.
-- RUC, régimen, domicilio contractual y capacidad de emitir comprobantes.
+- Nombre público y forma comercial que aparecerá en propuestas y perfiles.
+- Forma de cobro inicial; la formalización se revisará antes de habilitar pagos directos.
 - Nivel verificable en cada idioma y servicios que realmente puede ejecutar sin apoyo.
 - Títulos, certificados, cursos y experiencia que pueden publicarse con evidencia.
 - Tarifas mínimas y condiciones de pago.

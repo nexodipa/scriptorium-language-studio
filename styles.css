@@ -378,6 +378,76 @@ p {
   gap: 12px;
 }
 
+/* Education and credential surfaces */
+.credentials-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+  background: #eef3f2;
+  border-top: 1px solid rgba(71, 106, 120, 0.16);
+}
+
+.credentials-intro h2,
+.credential-hero h1 { max-width: 780px; }
+.credential-list { border-top: 1px solid rgba(23, 32, 50, 0.18); }
+.credential-list article {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 0.25rem 1.5rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid rgba(23, 32, 50, 0.15);
+}
+.credential-list time { grid-row: 1 / span 2; color: #667386; font-size: 0.82rem; text-transform: uppercase; }
+.credential-list h3, .credential-list p { margin: 0; }
+.credential-list h3 { font-size: 1.08rem; }
+.credential-list p { color: #667386; font-size: 0.92rem; }
+
+.credential-hero {
+  padding: clamp(7.5rem, 14vw, 11rem) max(6vw, calc((100vw - 1180px) / 2)) clamp(4rem, 8vw, 7rem);
+  background: #e7efee;
+  border-bottom: 1px solid rgba(71, 106, 120, 0.18);
+}
+.credential-hero h1 {
+  margin: 0.55rem 0 1rem;
+  font-family: Georgia, serif;
+  font-size: clamp(2.6rem, 5vw, 5.2rem);
+  line-height: 1.03;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.credential-hero > p:last-child { max-width: 760px; color: #425260; font-size: 1.05rem; line-height: 1.75; }
+.credential-table { border-top: 2px solid #476a78; }
+.credential-row {
+  display: grid;
+  grid-template-columns: 2.4fr 0.7fr 0.9fr 1.1fr;
+  gap: 1rem;
+  padding: 1.15rem 0.8rem;
+  border-bottom: 1px solid rgba(23, 32, 50, 0.15);
+  align-items: start;
+}
+.credential-head { color: #667386; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; }
+.credential-row strong { font-family: Georgia, serif; font-size: 1rem; }
+.credential-policy {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  background: #f7f8f6;
+}
+.policy-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.policy-columns article { padding-top: 1rem; border-top: 2px solid #c9a857; }
+.policy-columns h3, .policy-columns p { margin-top: 0; }
+
+@media (max-width: 760px) {
+  .credential-hero h1 { font-size: 2.35rem; }
+  .credentials-section, .credential-policy { grid-template-columns: 1fr; }
+  .credential-list article, .credential-row { grid-template-columns: 1fr; }
+  .credential-list time { grid-row: auto; }
+  .credential-head { display: none; }
+  .credential-row span, .credential-row time { color: #667386; font-size: 0.9rem; }
+  .policy-columns { grid-template-columns: 1fr; }
+}
+
 .hero-contact-strip {
   margin-top: 16px;
 }
