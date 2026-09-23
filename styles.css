@@ -1406,6 +1406,11 @@ p {
   padding: 34px;
 }
 
+.about-card--text {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 900px;
+}
+
 .about-card--brand {
   grid-template-columns: 220px 1fr;
 }
