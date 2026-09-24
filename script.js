@@ -77,13 +77,30 @@ function renderLens(key) {
 }
 
 lensButtons.forEach((button) => {
+  button.id = `lens-${button.dataset.lens}`;
+  button.setAttribute("aria-controls", "philology-panel");
+  button.tabIndex = button.getAttribute("aria-selected") === "true" ? 0 : -1;
   button.addEventListener("click", () => {
     lensButtons.forEach((item) => {
       const isActive = item === button;
       item.classList.toggle("active", isActive);
       item.setAttribute("aria-selected", String(isActive));
+      item.tabIndex = isActive ? 0 : -1;
     });
+    lensPanel.setAttribute("aria-labelledby", button.id);
     renderLens(button.dataset.lens);
+  });
+  button.addEventListener("keydown", (event) => {
+    const keys = ["ArrowLeft", "ArrowRight", "Home", "End"];
+    if (!keys.includes(event.key)) return;
+    event.preventDefault();
+    const buttons = Array.from(lensButtons);
+    let index = buttons.indexOf(button);
+    if (event.key === "Home") index = 0;
+    else if (event.key === "End") index = buttons.length - 1;
+    else index = (index + (event.key === "ArrowRight" ? 1 : -1) + buttons.length) % buttons.length;
+    buttons[index].click();
+    buttons[index].focus();
   });
 });
 
@@ -121,6 +138,23 @@ function buildRequestMessage(form) {
 }
 
 if (quoteForm) {
+  const deadline = quoteForm.elements.deadline;
+  if (deadline) {
+    const today = new Date();
+    deadline.min = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  }
+  whatsappRequestLink?.addEventListener("click", (event) => {
+    if (!quoteForm.reportValidity()) event.preventDefault();
+  });
+  document.querySelector("#copy-request")?.addEventListener("click", async () => {
+    if (!quoteForm.reportValidity()) return;
+    try {
+      await navigator.clipboard.writeText(buildRequestMessage(quoteForm));
+      formNote.textContent = "Solicitud copiada. Puedes pegarla en el canal que prefieras.";
+    } catch {
+      formNote.textContent = "No se pudo copiar. Usa Preparar correo o Preparar WhatsApp.";
+    }
+  });
   const refreshWhatsApp = () => {
     if (whatsappRequestLink) {
       whatsappRequestLink.href = "https://wa.me/593987411592?text=" + encodeURIComponent(buildRequestMessage(quoteForm));

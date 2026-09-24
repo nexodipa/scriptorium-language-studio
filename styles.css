@@ -1406,6 +1406,35 @@ p {
   padding: 34px;
 }
 
+.delivery-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; padding: 24px 0; list-style-position: inside; border-top: 1px solid #bcc8c7; }
+.delivery-steps h3 { font-size: 1.2rem; margin: 12px 0; }
+.delivery-steps p { color: var(--muted); }
+.project-tools { padding-top: 72px; }
+.project-tools h1 { font-size: 2.6rem; letter-spacing: 0; }
+.tool-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.tool-layout h2 { font-size: 1.5rem; }
+.tool-layout > * { min-width: 0; }
+.brief-result { padding-top: 24px; }
+.brief-result textarea { width: 100%; box-sizing: border-box; padding: 18px; margin: 12px 0; border: 1px solid #9baead; border-radius: 4px; font: inherit; resize: vertical; background: #fff; color: #253c3a; }
+.tool-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.tool-actions [hidden] { display: none; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.readiness { margin-top: 72px; padding-top: 40px; border-top: 1px solid #bcc8c7; }
+.checklist-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.checklist-grid label { display: flex; gap: 12px; align-items: baseline; }
+.checklist-grid input { flex: 0 0 auto; width: 18px; height: 18px; padding: 0; margin: 0; }
+.project-tools input, .project-tools select, .project-tools textarea { min-width: 0; max-width: 100%; }
+@media (max-width: 700px) {
+  .delivery-steps, .tool-layout, .checklist-grid { grid-template-columns: minmax(0, 1fr); }
+  .project-tools h1 { font-size: 2rem; }
+  .project-tools .force-visible { display: flex; flex-wrap: wrap; position: static; width: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
 .about-card--text {
   grid-template-columns: minmax(0, 1fr);
   max-width: 900px;
