@@ -413,7 +413,7 @@ p {
   font-family: Georgia, serif;
   font-size: clamp(2.6rem, 5vw, 5.2rem);
   line-height: 1.03;
-  overflow-wrap: normal;
+  overflow-wrap: anywhere;
   word-break: normal;
 }
 .credential-hero > p:last-child { max-width: 760px; color: #425260; font-size: 1.05rem; line-height: 1.75; }
@@ -2098,16 +2098,18 @@ input[type="file"] {
   background: #ffffff;
 }
 
-.reveal {
+.reveal-ready .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 520ms ease, transform 520ms ease;
 }
 
-.reveal.in-view {
+.reveal-ready .reveal.in-view {
   opacity: 1;
   transform: translateY(0);
 }
+
+[hidden] { display: none !important; }
 
 @media (max-width: 1120px) {
   .menu-button {

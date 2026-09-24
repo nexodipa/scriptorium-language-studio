@@ -7,6 +7,8 @@ const formNote = document.querySelector("#form-note");
 const whatsappRequestLink = document.querySelector("#whatsapp-request-link");
 
 if (menuButton && siteNav) {
+  menuButton.setAttribute("aria-controls", siteNav.id);
+  menuButton.setAttribute("aria-expanded", "false");
   const closeMenu = () => {
     siteNav.classList.remove("open");
     menuButton.setAttribute("aria-expanded", "false");
@@ -22,10 +24,13 @@ if (menuButton && siteNav) {
   siteNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && siteNav.classList.contains("open")) {
       closeMenu();
       menuButton.focus();
     }
+  });
+  document.addEventListener("click", (event) => {
+    if (!siteNav.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
   });
 }
 
@@ -80,6 +85,7 @@ lensButtons.forEach((button) => {
   button.id = `lens-${button.dataset.lens}`;
   button.setAttribute("aria-controls", "philology-panel");
   button.tabIndex = button.getAttribute("aria-selected") === "true" ? 0 : -1;
+  if (button.tabIndex === 0 && lensPanel) lensPanel.setAttribute("aria-labelledby", button.id);
   button.addEventListener("click", () => {
     lensButtons.forEach((item) => {
       const isActive = item === button;
@@ -114,6 +120,7 @@ if ("IntersectionObserver" in window) {
       }
     });
   }, { threshold: 0.12 });
+  document.documentElement.classList.add("reveal-ready");
   revealItems.forEach((item) => revealObserver.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("in-view"));
