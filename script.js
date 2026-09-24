@@ -1,4 +1,14 @@
 const menuButton = document.querySelector("#menu-button");
+const isEnglish = document.documentElement.lang === "en";
+const localized = (es, en) => isEnglish ? en : es;
+document.querySelectorAll('[data-language-link]').forEach(link => {
+  link.addEventListener('click', () => {
+    const shared = ['#home', '#services', '#method', '#project', '#about', '#faq', '#contact'];
+    const destination = new URL(link.href);
+    destination.hash = shared.includes(location.hash) ? location.hash : '';
+    link.href = destination.href;
+  });
+});
 const siteNav = document.querySelector("#site-nav");
 const lensButtons = document.querySelectorAll(".lens-button");
 const lensPanel = document.querySelector("#philology-panel");
@@ -12,13 +22,13 @@ if (menuButton && siteNav) {
   const closeMenu = () => {
     siteNav.classList.remove("open");
     menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Abrir menú");
+    menuButton.setAttribute("aria-label", localized("Abrir menú", "Open menu"));
   };
 
   menuButton.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("open");
     menuButton.setAttribute("aria-expanded", String(isOpen));
-    menuButton.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+    menuButton.setAttribute("aria-label", isOpen ? localized("Cerrar menú", "Close menu") : localized("Abrir menú", "Open menu"));
   });
 
   siteNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
@@ -128,6 +138,10 @@ if ("IntersectionObserver" in window) {
 
 function buildRequestMessage(form) {
   const data = new FormData(form);
+  if (isEnglish) {
+    const fields = [['name','Name'],['contact','Contact'],['service','Service'],['source','Source language'],['target','Target language'],['words','Length'],['deadline','Preferred date'],['message','Description']];
+    return ['Hello Scriptorium, I would like to discuss a project.', '', ...fields.map(([key,label]) => `${label}: ${data.get(key) || 'Not specified'}`), '', 'I am not including sensitive information in this initial enquiry.'].join('\n');
+  }
   return [
     "Hola Scriptorium, deseo solicitar una evaluación de proyecto.",
     "",
@@ -157,9 +171,9 @@ if (quoteForm) {
     if (!quoteForm.reportValidity()) return;
     try {
       await navigator.clipboard.writeText(buildRequestMessage(quoteForm));
-      formNote.textContent = "Solicitud copiada. Puedes pegarla en el canal que prefieras.";
+      formNote.textContent = localized("Solicitud copiada. Puedes pegarla en el canal que prefieras.", "Request copied. Paste it into your preferred contact channel.");
     } catch {
-      formNote.textContent = "No se pudo copiar. Usa Preparar correo o Preparar WhatsApp.";
+      formNote.textContent = localized("No se pudo copiar. Usa Preparar correo o Preparar WhatsApp.", "Could not copy. Use Prepare email or Prepare WhatsApp.");
     }
   });
   const refreshWhatsApp = () => {
@@ -180,11 +194,11 @@ if (quoteForm) {
 
     const message = buildRequestMessage(quoteForm);
     const mailto = "mailto:josuepug@gmail.com?subject=" +
-      encodeURIComponent("Solicitud de evaluación - Scriptorium") +
+      encodeURIComponent(localized("Solicitud de evaluación - Scriptorium", "Project enquiry - Scriptorium")) +
       "&body=" + encodeURIComponent(message);
 
     if (formNote) {
-      formNote.textContent = "Se abrirá tu aplicación de correo. El sitio no guarda esta información.";
+      formNote.textContent = localized("Se abrirá tu aplicación de correo. El sitio no guarda esta información.", "Your email application will open. This website does not store the information.");
     }
     window.location.href = mailto;
   });

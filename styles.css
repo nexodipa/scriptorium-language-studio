@@ -2111,6 +2111,20 @@ input[type="file"] {
 
 [hidden] { display: none !important; }
 
+/* A persistent language control, independent of the collapsed mobile menu. */
+.language-switch { display: flex; flex: 0 0 auto; gap: 2px; margin-left: auto; order: 2; }
+main [id] { scroll-margin-top: 110px; }
+.language-switch a { display: grid; place-items: center; min-width: 40px; min-height: 44px; font-size: 0.8rem; color: var(--muted); border-bottom: 2px solid transparent; }
+.language-switch a[aria-current] { color: var(--ink); border-color: var(--gold); font-weight: 700; }
+.language-switch + .menu-button { order: 3; margin-left: 8px; }
+.client-path-card { box-shadow: none; }
+.about-card--text { box-shadow: none; border-radius: 0; }
+.hero-media::after { background: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.82) 48%, rgba(255,255,255,.16)); }
+@media (max-width: 720px) {
+  .site-header:has(.language-switch) { gap: 8px; }
+  .language-switch a { min-width: 34px; }
+}
+
 @media (max-width: 1120px) {
   .menu-button {
     display: block;
