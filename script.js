@@ -1,6 +1,14 @@
 const menuButton = document.querySelector("#menu-button");
 const isEnglish = document.documentElement.lang === "en";
-const localized = (es, en) => isEnglish ? en : es;
+const pageLocale = document.querySelector('#page-locale') ? JSON.parse(document.querySelector('#page-locale').textContent) : null;
+const messageKeys = {
+  'Abrir menú': 7, 'Cerrar menú': 8,
+  'Solicitud copiada. Puedes pegarla en el canal que prefieras.': 4,
+  'No se pudo copiar. Usa Preparar correo o Preparar WhatsApp.': 5,
+  'Solicitud de evaluación - Scriptorium': 3,
+  'Se abrirá tu aplicación de correo. El sitio no guarda esta información.': 6
+};
+const localized = (es, en) => pageLocale && Object.hasOwn(messageKeys,es) ? pageLocale.messages[messageKeys[es]] : isEnglish ? en : es;
 document.querySelectorAll('[data-language-link]').forEach(link => {
   link.addEventListener('click', () => {
     const shared = ['#home', '#services', '#method', '#project', '#about', '#faq', '#contact'];
@@ -138,6 +146,11 @@ if ("IntersectionObserver" in window) {
 
 function buildRequestMessage(form) {
   const data = new FormData(form);
+  if (pageLocale) {
+    const keys = ['name','contact','service','source','target','words','deadline','message'];
+    const labels = [0,1,2,4,5,6,7,8];
+    return [pageLocale.messages[0], '', ...keys.map((key,i)=>`${pageLocale.form[labels[i]]}: ${data.get(key) || pageLocale.messages[1]}`), '', pageLocale.messages[2]].join('\n');
+  }
   if (isEnglish) {
     const fields = [['name','Name'],['contact','Contact'],['service','Service'],['source','Source language'],['target','Target language'],['words','Length'],['deadline','Preferred date'],['message','Description']];
     return ['Hello Scriptorium, I would like to discuss a project.', '', ...fields.map(([key,label]) => `${label}: ${data.get(key) || 'Not specified'}`), '', 'I am not including sensitive information in this initial enquiry.'].join('\n');

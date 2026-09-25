@@ -35,4 +35,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/fr.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/it.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/de.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/pt.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/ru.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/cs.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/zh.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/ja.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/he.html</loc></url>
+  <url><loc>https://nexodipa.github.io/scriptorium-language-studio/ar.html</loc></url>
 </urlset>
