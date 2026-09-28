@@ -2726,6 +2726,12 @@ textarea:focus-visible,
 .locale-resources nav { display: flex; flex-wrap: wrap; gap: 20px 32px; }
 .locale-resources a { text-decoration: underline; text-underline-offset: 5px; }
 .locale-notice { flex-basis: 100%; max-width: 900px; margin: 12px 0 0; font-size: 0.8rem; line-height: 1.6; color: var(--muted); }
+.localized-page :is(.section-heading p,.historical-copy p,.about-section p) { max-width: 68ch; line-height: 1.8; }
+.localized-page :is(h2,h3) { text-wrap: balance; hyphens: auto; }
+html:lang(zh) body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+html:lang(ja) body { font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif; }
+html:is(:lang(zh),:lang(ja)) .localized-page :is(h2,h3,p) { line-break: strict; overflow-wrap: break-word; }
+html[dir="rtl"] .localized-page :is(p,label) { line-height: 1.85; }
 .localized-page .site-footer { flex-wrap: wrap; }
 .localized-page :is(h2,h3,p,label,button,a) { overflow-wrap: anywhere; }
 .localized-page .hero-lead { max-width: 640px; }

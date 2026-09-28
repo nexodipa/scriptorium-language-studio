@@ -22,7 +22,7 @@ for (const [code, p] of Object.entries(pages)) {
 <title>Scriptorium | ${esc(p.hero[0])}</title><meta name="description" content="${esc(p.hero[1])}">
 <link rel="canonical" href="${base}${code}.html">${links}<link rel="alternate" hreflang="x-default" href="${base}">
 <meta property="og:type" content="website"><meta property="og:title" content="Scriptorium | ${esc(p.hero[0])}"><meta property="og:description" content="${esc(p.hero[1])}"><meta property="og:url" content="${base}${code}.html"><meta property="og:image" content="${base}assets/social-facebook-cover.png">
-<link rel="icon" href="assets/favicon.ico"><link rel="stylesheet" href="styles.css?v=multilingual-20260925"></head>
+<link rel="icon" href="assets/favicon.ico"><link rel="stylesheet" href="styles.css?v=editorial-20260928"></head>
 <body class="localized-page">
 <header class="site-header"><a class="brand" href="#home" aria-label="Scriptorium"><img class="brand-logo" src="assets/logo-icon.png" alt=""><span><strong dir="ltr">Scriptorium</strong><small>${esc(p.hero[0])}</small></span></a>
 ${menu}<button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="${esc(p.messages[7])}"><span></span><span></span><span></span></button>
