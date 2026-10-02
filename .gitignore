@@ -9,3 +9,6 @@ translation-cache.json
 
 # Local helper
 abrir-scriptorium.bat
+
+# OneDrive temp files
+.fuse_hidden*
