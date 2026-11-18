@@ -124,18 +124,29 @@
             <a href="https://wa.me/593987707647">WhatsApp: +593 98 770 7647</a>
           </div>
         </div>
-        <div class="quote-form">
-          <h3>Qué indicar</h3>
-          <ul class="store-checklist">
-            <li>Lengua de interés: latín (primera cohorte) o griego antiguo (segunda cohorte).</li>
-            <li>Nivel actual: nunca he estudiado, inicial o intermedio.</li>
-            <li>Disponibilidad semanal aproximada y zona horaria.</li>
-          </ul>
+        <form class="quote-form" id="form-lista" novalidate>
+          <h3>Únete a la lista</h3>
+          <label for="li-email">Correo</label>
+          <input id="li-email" name="email" type="email" required maxlength="200" autocomplete="email">
+          <label for="li-lengua">Lengua de interés</label>
+          <select id="li-lengua" name="lengua" required>
+            <option value="latin">Latín (primera cohorte)</option>
+            <option value="griego">Griego antiguo (segunda cohorte)</option>
+          </select>
+          <label for="li-nivel">Nivel actual</label>
+          <select id="li-nivel" name="nivel" required>
+            <option value="nunca">Nunca he estudiado</option>
+            <option value="inicial">Inicial</option>
+            <option value="intermedio">Intermedio</option>
+          </select>
+          <label for="li-disp">Disponibilidad semanal y zona horaria</label>
+          <textarea id="li-disp" name="disponibilidad" rows="2" maxlength="300"></textarea>
           <div class="form-actions-secondary">
-            <a class="primary-button" href="mailto:josuepug@gmail.com?subject=Lista%20de%20inter%C3%A9s%20-%20Lat%C3%ADn%20Scriptorium">Enviar correo</a>
+            <button class="primary-button" type="submit">Unirme a la lista</button>
             <a class="secondary-button" href="https://wa.me/593987707647">WhatsApp</a>
           </div>
-        </div>
+          <p id="li-msg" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
@@ -156,6 +167,26 @@
       WhatsApp
     </a>
 
+    <script>
+(function(){
+  var f=document.getElementById('form-lista'),m=document.getElementById('li-msg');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=Object.fromEntries(new FormData(f).entries());
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email||'')){m.textContent='Revisa el correo.';return}
+    m.textContent='Enviando...';
+    fetch('https://plrqjhizrhrytxihbogj.supabase.co/rest/v1/lista_interes',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','apikey':'sb_publishable_kPwXb1rAU45B4FdefcXMww_txvKWlG0','Prefer':'return=minimal'},
+      body:JSON.stringify({email:d.email.trim(),lengua:d.lengua,nivel:d.nivel,disponibilidad:(d.disponibilidad||'').trim()||null})
+    }).then(function(r){
+      if(r.ok){f.reset();m.textContent='Listo. Te escribiré con fechas y condiciones del piloto.'}
+      else{m.textContent='No se pudo enviar. Escríbeme a josuepug@gmail.com.'}
+    }).catch(function(){m.textContent='No se pudo enviar. Escríbeme a josuepug@gmail.com.'});
+  });
+})();
+</script>
     <script src="script.js?v=multilingual-20260925"></script>
   <script src="language-menu.js?v=20260925"></script></body>
 </html>
