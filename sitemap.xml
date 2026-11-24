@@ -64,4 +64,9 @@
   <url><loc>https://nexodipa.github.io/scriptorium-language-studio/blog/traducir-vs-localizar.html</loc></url>
   <url><loc>https://nexodipa.github.io/scriptorium-language-studio/blog/que-es-la-transcreacion.html</loc></url>
   <url><loc>https://nexodipa.github.io/scriptorium-language-studio/blog/por-que-importan-las-escrituras-antiguas.html</loc></url>
+  <url>
+    <loc>https://nexodipa.github.io/scriptorium-language-studio/blog/ego-y-cognados.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
