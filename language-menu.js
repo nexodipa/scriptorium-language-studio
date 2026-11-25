@@ -22,7 +22,7 @@
   }
   select.addEventListener('change', () => {
     if (!Object.hasOwn(languages,select.value)) return;
-    const file = select.value === 'es' ? 'index.html' : `${select.value}.html`;
+    const file = select.value === 'es' ? 'traduccion.html' : `${select.value}.html`;
     const target = new URL(file, location.href);
     const shared = ['#home','#services','#method','#project','#historical','#about','#faq','#contact'];
     if(shared.includes(location.hash)) target.hash = location.hash;

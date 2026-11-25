@@ -5,7 +5,7 @@ const pages = {...require('../locales/pages.json'), ...require('../locales/exten
 const names = {es:'Español',en:'English',fr:'Français',it:'Italiano',de:'Deutsch',pt:'Português',ru:'Русский',cs:'Čeština',zh:'简体中文',ja:'日本語',he:'עברית',ar:'العربية'};
 const base = 'https://nexodipa.github.io/scriptorium-language-studio/';
 const esc = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-const destination = code => code === 'es' ? 'index.html' : `${code}.html`;
+const destination = code => code === 'es' ? 'traduccion.html' : `${code}.html`;
 const links = Object.entries(names).map(([code])=>`<link rel="alternate" hreflang="${code}" href="${base}${destination(code)}">`).join('\n');
 function formField(label, name, attributes='') {
   return `<label>${esc(label)}<input name="${name}" ${attributes}></label>`;
