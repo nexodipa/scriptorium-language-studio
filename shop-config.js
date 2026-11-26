@@ -1,5 +1,5 @@
 /* Configuración de la tienda de Scriptorium.
-   Cuando una URL de pago de Lemon Squeezy esté lista, pégala entre comillas.
+   Cuando una URL de pago de Gumroad esté lista, pégala entre comillas.
    Mientras esté vacía, el botón muestra "Avísame al abrir" y recoge el correo. */
 window.SCRIPTORIUM_SHOP = {
   H01: { url: "" },
