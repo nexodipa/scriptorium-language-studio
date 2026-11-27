@@ -191,7 +191,7 @@ if (quoteForm) {
   });
   const refreshWhatsApp = () => {
     if (whatsappRequestLink) {
-      whatsappRequestLink.href = "https://wa.me/593987411592?text=" + encodeURIComponent(buildRequestMessage(quoteForm));
+      whatsappRequestLink.href = "https://wa.me/593987707647?text=" + encodeURIComponent(buildRequestMessage(quoteForm));
     }
   };
 

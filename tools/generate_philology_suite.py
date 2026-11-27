@@ -190,7 +190,7 @@ def create_hero_derivatives() -> list[Path]:
         d.text((pad, pad + logo_w + 124), title.upper(), font=font("sans-bold", 25 if size[0] > 1200 else 22), fill=BLUE_DEEP)
         draw_wrapped(d, subtitle, (pad, pad + logo_w + 182), min(720, size[0] - pad * 2), font("sans", 30 if size[0] > 1200 else 28), INK_SOFT, line_gap=12)
         d.line((pad, size[1] - pad - 46, size[0] - pad, size[1] - pad - 46), fill=hex_to_rgba(GOLD, 190), width=3)
-        d.text((pad, size[1] - pad - 30), "josuepug@gmail.com  |  WhatsApp +593 98 741 1592", font=font("sans-bold", 19 if size[0] > 1200 else 17), fill=BLUE_DEEP)
+        d.text((pad, size[1] - pad - 30), "josuepug@gmail.com  |  WhatsApp +593 98 770 7647", font=font("sans-bold", 19 if size[0] > 1200 else 17), fill=BLUE_DEEP)
         out = ASSETS / filename
         canvas_img.convert("RGB").save(out, quality=94)
         outputs.append(out)
